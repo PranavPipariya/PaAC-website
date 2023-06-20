@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+.home-container{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.active{
+    background-color: none;
+}
+  
+.home-topbar{
+    position: relative;
+    /* background-color: black; */
+}
+.ellipse{
+    position: absolute;
+    margin-left: 0;
+    width: 30vw;
+    height: 30vw;
+}
+.home-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: min(35vh,30vw);
+    z-index: 99;
+    color: #E4B6A5;
+}
+.club{
+    margin-bottom: 0.5vh;
+    font-size: 4vw;
+    font-weight: lighter;
+}
+.iitr{
+    font-weight: lighter;
+    font-size:2vw;
+}
+.planet{
+    position: absolute;
+    top: 20vh;
+    right: 0;
+    height: 50vw;
+}
+.know-paac-container{
+    width: 90%;
+    position: relative;
+    margin-left: 0;
+    margin-top: min(120vh,60vw);
+    display: flex;
+    justify-content: center;
+    padding: 5vw;
+    color: white;
+}
+.paac-desc{
+    width: 45%;
+}
+.know-header{
+    color: #E4B6A5;
+}
+.paac-gp{
+    background-color: rgba(255, 255, 255, 0.453);
+    font-size: 2vw;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.home-achievement{
+    font-weight: 500;
+    border-radius: 1vw;
+    padding: 3vw;
+    width: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+    margin-top: 15vh;
+}
+.home-events{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.home-events-photo{
+    background-color: rgba(255, 255, 255, 0.466);
+    font-size: 2vw;
+}
+.home-events-photo, .home-events-upcoming{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.home-events-title{
+    color: #E4B6A5;
+}
+.home-events-item{
+    font-size: max(1.4vw,10px);
+}
+.home-gallery{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+    background-color: rgba(255, 255, 255, 0.322);
+}
+.home-gallery-top{
+    padding: 1vw;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.home-gallery-text{
+    color: #E4B6A5;
+    font-weight: 450;
+}
+.home-gallery-img{
+    width: 100%;
+}
+@media screen and (max-width:700px) {
+    *{
+        box-sizing: border-box;
+    }
+    .home-container{
+        box-sizing: border-box;
+        width: 100vw;
+    }
+    .home-body{
+        margin-top:0;
+    }
+    .home-title{
+        margin-top: 0;
+    }
+    .club{
+        font-size: 5.5vw;
+        font-weight: 450;
+    }
+    .iitr{
+        font-size:3vw;
+        font-weight: 450;;
+    }
+    .know-paac-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vw;
+    }
+    .know-header{
+        font-size:4vw;
+    }
+    .know-body{
+        font-size: 3vw;
+    }
+    .paac-desc, .paac-gp{
+        width: 90%;
+    }
+    .paac-gp{
+        height: 30vh;
+    }
+    .home-achievement{
+        margin: 5vh;
+        height: 20vh;
+        width: 90%;
+    }
+    .home-events{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+    .home-events-photo{
+        width: 90%;
+        height:30vh;
+    }
+    .home-events-upcoming{
+        width: 80%;
+        font-size: 4vw;
+    }
+    .home-events-item{
+        font-size:3vw;
+    }
+    .home-gallery{
+        width: 100%;
+    }
+    .ellipse{
+        width: 35vw;
+        height: 35vw
+    }
+}
