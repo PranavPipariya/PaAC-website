@@ -14,6 +14,9 @@
   width: 5vw;
   height: 5vw;
 }
+.topbar-top a.active {
+  background-color: transparent;
+}
 .topbar-navs {
   padding: 1vw;
   font-size: max(1.5vw, 20px);
@@ -26,13 +29,22 @@
   color: #e4b6a5;
   text-decoration: none;
   margin-left: 2vw;
+  letter-spacing: normal;
+  font-size: smaller;
+  font-weight: 400;
 }
 .nav-btns a.active {
+  color: #faf9f1;
   background-color: #07072f;
   text-decoration: underline;
   text-underline-offset: 7px;
   text-decoration-thickness: 3px;
 }
+.nav-btns :hover {
+  color: #faf9f1;
+  transition: all 0.7s ease-out;
+}
+
 .nav-toggle {
   position: relative;
 }

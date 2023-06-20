@@ -27,11 +27,10 @@ export default function Footer(){
                     <h2 className="footer-body">paac@iitr.ac.in</h2>
                 </div>
                 <div className="footer-div social">
-                    <div className="footer-socials"><Instagram className="socials-icon" fontSize="2vw"/>Instagram</div>
-                    <div className="footer-socials"><Facebook className="socials-icon" fontSize="2vw"/>Facebook</div>
-                    <div className="footer-socials"><Twitter className="socials-icon" fontSize="2vw"/>Twitter</div>
-                    <div className="footer-socials"><LinkedIn className="socials-icon" fontSize="2vw"/>LinkedIn</div>
-                    <div className="footer-socials"><Email className="socials-icon" fontSize="2vw"/>Email</div>
+                    <div className="footer-socials"><a href="https://www.instagram.com/astro_iitr/?hl=en" target="m_blank"><Instagram className="socials-icon" fontSize="2vw"/>Instagram</a></div>
+                    <div className="footer-socials"><a href="https://www.facebook.com/physastroclubiitr/" target="m_blank"><Facebook className="socials-icon" fontSize="2vw"/>Facebook</a></div>
+                    <div className="footer-socials"><a href="https://twitter.com/paaciitr?lang=en" target="m_blank"><Twitter className="socials-icon" fontSize="2vw"/>Twitter</a></div>
+                    <div className="footer-socials"><a href="https://www.linkedin.com/company/paac-iitr/" target="m_blank"><LinkedIn className="socials-icon" fontSize="2vw"/>Linkedin</a></div>
                 </div>
                 </div>
             </div>
