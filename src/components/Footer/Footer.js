@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { Email, Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
