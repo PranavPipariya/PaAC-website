@@ -99,7 +99,9 @@
     margin-bottom: 20vh;
     margin-top: 15vh;
 }
-.home-events{
+
+/* -----------Home Events Styling----------------- */
+/* .home-events-section{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -120,7 +122,52 @@
 }
 .home-events-item{
     font-size: max(1.4vw,10px);
+} */
+
+.home-events-section{
+    padding: 16px;
 }
+
+.home-events-heading{
+    color: #E4B6A5;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px 16px;
+}
+
+.home-events-upcoming{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home-event-card{
+    padding: 16px 24px;
+    width: 350px;
+    margin: 16px 45px 80px 45px;
+    border: .4vw solid #E4B6A5;
+    border-radius: 24px;
+    background-color: #1c1d24;
+}
+
+.home-event-time, .home-event-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white !important;
+}
+
+.home-event-description{
+    text-align: center;
+}
+
+.home-events-photo{
+    display: block;
+    margin: auto;
+    height: 160px;
+    width: 250px;
+}
+/* ------------Home Events Styling Finishes Here------------ */
+
 .home-gallery{
     width: 70%;
     display: flex;
@@ -189,24 +236,21 @@
         height: 20vh;
         width: 90%;
     }
-    .home-events{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin: 0;
-    }
-    .home-events-photo{
-        width: 90%;
-        height:30vh;
+
+    /* -----Home Events Responsive Starts------- */
+    .home-events-heading{
+        font-size: 32px;
     }
     .home-events-upcoming{
+        justify-content: center;
+        align-items: center;
+    }
+    .home-events-photo{
         width: 80%;
-        font-size: 4vw;
+        height: 25vh;
     }
-    .home-events-item{
-        font-size:3vw;
-    }
+    /* ---------Home Events Responsive finish */
+
     .home-gallery{
         width: 100%;
     }
