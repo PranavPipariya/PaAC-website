@@ -1,218 +1,258 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-.home-container{
-    /* position: relative; */
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
+.home-container {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
-.active{
-    background-color: none;
+.active {
+  background-color: none;
 }
-  
-.home-topbar{
-    position: relative;
-    /* background-color: black; */
+
+.home-topbar {
+  position: relative;
+  /* background-color: black; */
 }
-.ellipse{
-    position: absolute;
-    margin-left: 0;
-    width: 30vw;
-    height: 30vw;
+.ellipse {
+  position: absolute;
+  margin-left: 0;
+  width: 30vw;
+  height: 30vw;
 }
-.home-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    top: min(35vh,30vw);
-    z-index: 99;
-    color: #E4B6A5;
+.home-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: min(35vh, 30vw);
+  z-index: 99;
+  color: #e4b6a5;
 }
-.club{
-    margin-bottom: 0.5vh;
-    font-size: 4vw;
-    font-weight: lighter;
+.club {
+  margin-bottom: 0.5vh;
+  font-size: 4vw;
+  font-weight: lighter;
 }
-.iitr{
-    font-weight: lighter;
-    font-size:2vw;
+.iitr {
+  font-weight: lighter;
+  font-size: 2vw;
 }
-.planet{
-    position: absolute;
-    top: 20vh;
-    right: 0;
-    height: 50vw;
+.planet {
+  position: absolute;
+  top: 20vh;
+  right: 0;
+  height: 50vw;
 }
-.know-paac-container{
-    width: 90%;
-    position: relative;
-    margin-left: 0;
-    margin-top: min(120vh,60vw);
-    display: flex;
-    justify-content: center;
-    padding: 5vw;
-    color: white;
-    cursor: pointer;
+.know-paac-container {
+  width: 90%;
+  position: relative;
+  margin-left: 0;
+  margin-top: min(120vh, 60vw);
+  display: flex;
+  justify-content: center;
+  padding: 5vw;
+  color: white;
+  cursor: pointer;
 }
-.paac-desc{
-    width: 45%;
+.paac-desc {
+  width: 45%;
 }
-.know-header{
-    color: #E4B6A5;
-    transition: all 0.7s ease-in-out;
+.know-header {
+  color: #e4b6a5;
+  transition: all 0.7s ease-in-out;
 }
 .know-body {
-    font-weight: 300;
+  font-weight: 300;
 }
 .know-header:hover {
-    color: #faf9f1;
+  color: #faf9f1;
 }
-.paac-gp{
-    background-color: rgba(255, 255, 255, 0.453);
-    font-size: 2vw;
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.paac-gp {
+  background-color: rgba(255, 255, 255, 0.453);
+  font-size: 2vw;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.home-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center
+.home-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.home-achievement{
-    font-weight: 500;
-    border-radius: 1vw;
-    padding: 3vw;
-    width: 80%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20vh;
-    margin-top: 15vh;
+.home-achievement {
+  font-weight: 500;
+  border-radius: 1vw;
+  padding: 3vw;
+  width: 80%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20vh;
+  margin-top: 15vh;
 }
-/* events section */
-.home-events{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+
+/* -----------Home Events Styling----------------- */
+
+.home-events-section {
+  padding: 16px;
 }
-.home-events-photo{
-    background-color: rgba(255, 255, 255, 0.466);
-    font-size: 2vw;
+
+.home-events-heading {
+  color: #e4b6a5;
+  font-size: 40px;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+  padding: 0 1em 0 1em;
+  margin-bottom: 3rem;
 }
-.home-events-photo, .home-events-upcoming{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+.home-events-heading:hover {
+  cursor: pointer;
+  color: #edcbb9;
 }
-.home-events-title{
-    color: #E4B6A5;
+
+.home-events-upcoming {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 4.5rem;
 }
-.home-events-item{
-    font-size: max(1.4vw,10px);
+
+.home-event-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  width: 15rem;
+  border-radius: 24px;
+  background-color: #1c1d24;
+  transition: transform 0.35s ease-in-out;
+  cursor: default;
 }
-.home-gallery{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10vw;
-    background-color: rgba(255, 255, 255, 0.322);
+.home-event-card:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
 }
-.home-gallery-top{
-    padding: 1vw;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.home-event-time,
+.home-event-title {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: white !important;
+  font-weight: 500;
 }
-.home-gallery-text{
-    color: #E4B6A5;
+
+.home-event-description {
+  font-weight: 200;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.home-events-photo {
+  object-fit: contain; /* image is resized but not clipped */
+  height: 160px;
+  width: 260px;
+  border-radius: 24px;
+}
+/* ------------Home Events Styling Finishes Here------------ */
+
+.home-gallery {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vw;
+  background-color: rgba(255, 255, 255, 0.322);
+}
+.home-gallery-top {
+  padding: 1vw;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-gallery-text {
+  color: #e4b6a5;
+  font-weight: 450;
+}
+.home-gallery-img {
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  * {
+    box-sizing: border-box;
+  }
+  .home-container {
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  .home-body {
+    margin-top: 0;
+  }
+  .home-title {
+    margin-top: 0;
+  }
+  .club {
+    font-size: 5.5vw;
     font-weight: 450;
-}
-.home-gallery-img{
+  }
+  .iitr {
+    font-size: 3vw;
+    font-weight: 450;
+  }
+  .know-paac-container {
     width: 100%;
-}
-@media screen and (max-width:700px) {
-    *{
-        box-sizing: border-box;
-    }
-    .home-container{
-        box-sizing: border-box;
-        width: 100vw;
-    }
-    .home-body{
-        margin-top:0;
-    }
-    .home-title{
-        margin-top: 0;
-    }
-    .club{
-        font-size: 5.5vw;
-        font-weight: 450;
-    }
-    .iitr{
-        font-size:3vw;
-        font-weight: 450;;
-    }
-    .know-paac-container{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2vw;
-    }
-    .know-header{
-        font-size:4vw;
-    }
-    .know-body{
-        font-size: 3vw;
-    }
-    .paac-desc, .paac-gp{
-        width: 90%;
-    }
-    .paac-gp{
-        height: 30vh;
-    }
-    .home-achievement{
-        margin: 5vh;
-        height: 20vh;
-        width: 90%;
-    }
-    .home-events{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin: 0;
-    }
-    .home-events-photo{
-        width: 90%;
-        height:30vh;
-    }
-    .home-events-upcoming{
-        width: 80%;
-        font-size: 4vw;
-    }
-    .home-events-item{
-        font-size:3vw;
-    }
-    .home-gallery{
-        width: 100%;
-    }
-    .ellipse{
-        width: 35vw;
-        height: 35vw
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+  }
+  .know-header {
+    font-size: 4vw;
+  }
+  .know-body {
+    font-size: 3vw;
+  }
+  .paac-desc,
+  .paac-gp {
+    width: 90%;
+  }
+  .paac-gp {
+    height: 30vh;
+  }
+  .home-achievement {
+    margin: 5vh;
+    height: 20vh;
+    width: 90%;
+  }
+
+  /* -----Home Events Responsive Starts------- */
+  .home-events-heading {
+    font-size: 32px;
+  }
+  .home-events-upcoming {
+    justify-content: center;
+    align-items: center;
+  }
+  .home-events-photo {
+    width: 80%;
+    height: 25vh;
+  }
+  /* ---------Home Events Responsive finish */
+
+  .home-gallery {
+    width: 100%;
+  }
+  .ellipse {
+    width: 35vw;
+    height: 35vw;
+  }
 }
