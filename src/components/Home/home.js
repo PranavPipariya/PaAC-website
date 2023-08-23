@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Achievement from "../Achievement/Achievement";
+import HomeEvents from "./HomeEvents";
 
 export default function Home() {
   useEffect(() => {
@@ -55,10 +56,22 @@ export default function Home() {
             data-aos-once="false"
             data-aos-easing="ease-in-out"
           >
-            <NavLink to="/about-us"><h1 className="know-header">What do we do at PaAC?</h1></NavLink>
+            <NavLink to="/about-us">
+              <h1 className="know-header">What do we do at PaAC?</h1>
+            </NavLink>
             <p className="know-body">
-            Formerly known as the Star-gazing section, our group directly operates under the Student Technical Council of IITR and Office of Dean-sponsored research and industrial consultancy. The group is a student club that has a core executive team. However volunteering and even membership is open to all UG, PG, and Ph.D. students. Every year, we engage in several physics and astronomy outreach events and short and long-term technical projects.
-            The club as its normal functioning engages in various activities, A Physics and Astronomy Journal Club is also a subset of our group. This Journal club frequently engages in research paper discussions and also in open informal group discussions on various mathematical and physical science topics.
+              Formerly known as the Star-gazing section, our group directly
+              operates under the Student Technical Council of IITR and Office of
+              Dean-sponsored research and industrial consultancy. The group is a
+              student club that has a core executive team. However volunteering
+              and even membership is open to all UG, PG, and Ph.D. students.
+              Every year, we engage in several physics and astronomy outreach
+              events and short and long-term technical projects. The club as its
+              normal functioning engages in various activities, A Physics and
+              Astronomy Journal Club is also a subset of our group. This Journal
+              club frequently engages in research paper discussions and also in
+              open informal group discussions on various mathematical and
+              physical science topics.
             </p>
           </div>
           <div
@@ -79,36 +92,24 @@ export default function Home() {
         >
           <Achievement />
         </div>
+
+        {/* ---------Home Events------------ */}
         <div
-          className="home-events"
+          className="home-events-section"
           data-aos="fade-up"
           data-aos-once="false"
           data-aos-easing="ease-in-out"
         >
-          <div className="home-events-photo">Event ka Photo</div>
+          <NavLink to="/events" className="home-events-link">
+            <h1 className="home-events-heading">
+              Exploring the Cosmos: Engaging Events conducted by PaAC
+            </h1>
+          </NavLink>
           <div className="home-events-upcoming">
-            <NavLink to="/events" className="home-events-title">
-              <h1 className="home-events-title">
-                Exploring the Cosmos: Engaging Events conducted by PaAC
-              </h1>
-            </NavLink>
-
-            <ul className="home-events-list">
-              <li className="home-events-item">
-              Mysteries of Universe lecture series
-              </li>
-              <li className="home-events-item">
-              Integration Bee
-              </li>
-              <li className="home-events-item">
-              Nerdigram 2022
-              </li>
-              <li className="home-events-item">
-              Telescope handling workshop & stargazing session
-              </li>
-            </ul>
+            <HomeEvents/>
           </div>
         </div>
+        {/* ------------Home Events Finishes------------ */}
         <div
           className="home-gallery"
           data-aos="fade-up"
