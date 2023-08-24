@@ -131,7 +131,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   width: 15rem;
   border-radius: 24px;
   background-color: #1c1d24;
@@ -151,16 +151,24 @@
 }
 
 .home-event-description {
-  font-weight: 200;
-  font-size: 0.9rem;
+  font-weight: 300;
+  font-size: 16px;
   text-align: center;
+  letter-spacing: 0.2px;
 }
-
-.home-events-photo {
-  object-fit: contain; /* image is resized but not clipped */
+.home-events-photo-container {
   height: 160px;
   width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-events-photo {
+  object-fit: contain; /* image is resized but not clipped */
+  max-height: 100%;
+  max-width: 100%;
   border-radius: 24px;
+
 }
 /* ------------Home Events Styling Finishes Here------------ */
 

@@ -7,7 +7,7 @@ const HomeEvents = () => {
       {home_events.map((home_event) => (
         <div className="home-event-card">
           <h1 className="home-event-time">{home_event.date}</h1>
-          <div>
+          <div className="home-events-photo-container">
             <img className="home-events-photo" src={home_event.image} alt="" />
           </div>
           <p className="home-event-title">{home_event.title}</p>
