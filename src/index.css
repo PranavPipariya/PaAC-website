@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #07072F;
+  background-color: #07072f;
   color: white;
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
@@ -12,6 +12,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
