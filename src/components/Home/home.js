@@ -100,13 +100,16 @@ export default function Home() {
           data-aos-once="false"
           data-aos-easing="ease-in-out"
         >
-          <NavLink to="/events" className="home-events-link">
-            <h1 className="home-events-heading">
-              Exploring the Cosmos: Engaging Events conducted by PaAC
-            </h1>
-          </NavLink>
+          <div className="home-events-heading-container">
+            <NavLink to="/events" className="home-events-link">
+              <h1 className="home-events-heading">
+                Exploring the Cosmos: Engaging Events conducted by PaAC
+              </h1>
+            </NavLink>
+          </div>
+
           <div className="home-events-upcoming">
-            <HomeEvents/>
+            <HomeEvents />
           </div>
         </div>
         {/* ------------Home Events Finishes------------ */}

@@ -20,17 +20,16 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.contact-desc-title {
+/* .contact-desc-title {
   color: #e4b6a5;
   font-size: max(3vw, 15px);
   margin-bottom: 0;
-}
+} */
 .contact-desc-desc {
   font-size: max(2.5vw, 13px);
   font-weight: 400;
 }
 .contact-form {
-  border: 0.3rem solid #e4b6a5;
   border-radius: 1.5rem;
   background-color: #ffffff30;
   width: max(35%, 300px);
@@ -47,6 +46,7 @@
   color: #e4b6a5;
   font-size: max(3vw, 15px);
   margin-bottom: .5rem;
+  text-align: center;
 }
 .visit-us, .contact-us, .chat-with-us{
     margin-bottom: 2rem;
@@ -91,22 +91,26 @@ textarea {
   padding: 0.6rem;
   font-size: max(1vw, 10px);
   height: 17vh;
-  background-color: #07072f;
+  background-color: white;
   margin-bottom: 5vh;
-  color: #f9ede9;
-  border: none;
+  color: black;
+  font-family: 'Outfit', sans-serif;
   border-radius: 6px;
+  cursor: text;
+  outline: none;
 }
 input {
   width: 95%;
   padding: 0.6rem;
   font-size: max(1vw, 10px);
   height: 6vh;
-  background-color: #07072f;
+  background-color: white;
   margin-bottom: 5vh;
-  color: #f9ede9;
-  border: none;
+  color: black;
   border-radius: 6px;
+  font-family: 'Outfit', sans-serif;
+  cursor: text;
+  outline: none;
 }
 
 .form-submit {
@@ -117,13 +121,19 @@ input {
 .form-submit-btn {
   border: none;
   border-radius: 5px;
-  background-color: #e4b6a5;
+  background-color: white;
   padding: 0.5vw;
   padding-left: 1.25vw;
   padding-right: 1.25vw;
   font-size: max(1.3vw, 10px);
-  color: #5b5959;
+  color: black;
   font-weight: 500;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.form-submit-btn:hover {
+  cursor: pointer;
+  background-color: #e4b6a5;
 }
 
 @media screen and (max-width: 700px) {
