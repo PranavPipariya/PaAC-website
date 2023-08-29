@@ -9,11 +9,20 @@
   margin: 0;
   width: 100%;
   box-sizing: border-box;
+  /* overflow: hidden; */
 }
+
 .active {
   background-color: none;
 }
 
+.home-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .home-topbar {
   position: relative;
   /* background-color: black; */
@@ -68,7 +77,7 @@
   color: #e4b6a5;
   transition: all 0.7s ease-in-out;
 }
-.know-body {
+.know-.home-container {
   font-weight: 300;
 }
 .know-header:hover {
@@ -82,7 +91,7 @@
   justify-content: center;
   align-items: center;
 }
-.home-body {
+.home-.home-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -103,10 +112,8 @@
 /* -----------Home Events Styling----------------- */
 
 .home-events-section {
-  padding: 16px;
   display: flex; /* the heading was not responsive without this */
   flex-direction: column;
-  max-width: 100vw;
   align-items: center;
 }
 
@@ -127,12 +134,8 @@
   justify-content: center;
   align-items: center;
 }
-
-.home-events-upcoming {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 4.5rem;
-  flex-wrap: wrap;
+.home-events-carousel {
+  cursor: grab;
 }
 
 .home-event-card {
@@ -144,11 +147,12 @@
   width: 15rem;
   border-radius: 24px;
   background-color: #1c1d24;
-  transition: transform 0.35s ease-in-out;
+  opacity: 0.9;
+  transition: opacity 0.35s ease-in-out;
   cursor: default;
 }
 .home-event-card:hover {
-  transform: scale3d(1.05, 1.05, 1.05);
+  opacity: 1;
 }
 
 .home-event-time,
@@ -178,7 +182,6 @@
   max-height: 100%;
   max-width: 100%;
   border-radius: 24px;
-
 }
 /* ------------Home Events Styling Finishes Here------------ */
 
@@ -212,7 +215,7 @@
     box-sizing: border-box;
     width: 100vw;
   }
-  .home-body {
+  .home-.home-container {
     margin-top: 0;
   }
   .home-title {
@@ -236,7 +239,7 @@
   .know-header {
     font-size: 4vw;
   }
-  .know-body {
+  .know-.home-container {
     font-size: 3vw;
   }
   .paac-desc,

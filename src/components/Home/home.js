@@ -108,7 +108,7 @@ export default function Home() {
             </NavLink>
           </div>
 
-          <div className="home-events-upcoming">
+          <div className="home-events-carousel">
             <HomeEvents />
           </div>
         </div>
