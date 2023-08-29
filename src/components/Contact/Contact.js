@@ -9,8 +9,7 @@ import {
   LinkedIn,
   Twitter,
   Facebook,
-  Email,
-  WhatsApp,
+  Email
 } from "@mui/icons-material";
 
 export default function Contact() {
@@ -83,7 +82,7 @@ export default function Contact() {
           <div className="chat-with-us">
             <h1 className="chat-title">Join our open Whatsapp group</h1>
             <div className="chat-qr">
-              <img src="/images/iitr_logo.png"></img>
+              <img src="/images/iitr_logo.png" alt="iitr logo"></img>
             </div>
           </div>
           <div className="visit-us">
@@ -98,6 +97,7 @@ export default function Contact() {
                 allowfullscreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                title="SAC address"
               ></iframe>
             </div>
           </div>
