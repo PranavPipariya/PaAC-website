@@ -36,7 +36,7 @@ export default function Home() {
           data-aos-easing="ease-in-out"
           data-aos-once="false"
         >
-          <h1 className="club">Physics And Astronomy Club</h1>
+          <h1 className="club">PHYSICS AND ASTRONOMY CLUB</h1>
           <h3 className="iitr">IIT ROORKEE</h3>
         </div>
         <img
