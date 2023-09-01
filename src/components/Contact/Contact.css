@@ -132,7 +132,6 @@ input {
   transition: all 0.3s ease-in-out;
 }
 .form-submit-btn:hover {
-  cursor: pointer;
   background-color: #e4b6a5;
 }
 
