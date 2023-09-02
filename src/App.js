@@ -14,14 +14,15 @@ import "./components/assets/mouseFollower.css";
 function App() {
   useEffect(() => {
     MouseFollower.registerGSAP(gsap);
-    const cursor = new MouseFollower({
-      container: document.body,
-      speed: 0.6,
-    });
-
-    return () => {
-      cursor.destroy();
-    }
+    if (window.matchMedia('(pointer:fine)').matches) {
+      const cursor = new MouseFollower({
+        container: document.body,
+        speed: 0.6,
+      });
+      return () => {
+        cursor.destroy();
+      };
+  }
   }, []);
 
   const router = createBrowserRouter([
