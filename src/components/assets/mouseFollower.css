@@ -8,6 +8,11 @@
   pointer-events: none;
   transition: opacity 0.3s, color 0.4s;
 }
+@media screen and (max-width: 769px) {
+  .mf-cursor {
+    display: none;
+  }
+}
 .mf-cursor:before {
   content: "";
   position: absolute;
