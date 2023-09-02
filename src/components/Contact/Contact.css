@@ -96,7 +96,6 @@ textarea {
   color: black;
   font-family: 'Outfit', sans-serif;
   border-radius: 6px;
-  cursor: text;
   outline: none;
 }
 input {
@@ -109,7 +108,6 @@ input {
   color: black;
   border-radius: 6px;
   font-family: 'Outfit', sans-serif;
-  cursor: text;
   outline: none;
 }
 
@@ -132,7 +130,6 @@ input {
   transition: all 0.3s ease-in-out;
 }
 .form-submit-btn:hover {
-  cursor: pointer;
   background-color: #e4b6a5;
 }
 

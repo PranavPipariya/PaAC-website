@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
 }
+
 .home-container {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,7 +68,6 @@
   justify-content: center;
   padding: 5vw;
   color: white;
-  cursor: pointer;
 }
 .paac-desc {
   width: 45%;
@@ -125,7 +124,6 @@
   margin-bottom: 3rem;
 }
 .home-events-heading:hover {
-  cursor: pointer;
   color: #edcbb9;
 }
 .home-events-heading-container {
@@ -133,9 +131,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.home-events-carousel {
-  cursor: grab;
 }
 
 .home-event-card {
@@ -149,7 +144,6 @@
   background-color: #1c1d24;
   opacity: 0.9;
   transition: opacity 0.35s ease-in-out;
-  cursor: default;
 }
 .home-event-card:hover {
   opacity: 1;

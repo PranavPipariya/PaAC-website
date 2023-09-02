@@ -36,7 +36,7 @@ export default function Home() {
           data-aos-easing="ease-in-out"
           data-aos-once="false"
         >
-          <h1 className="club">Physics And Astronomy Club</h1>
+          <h1 className="club">PHYSICS AND ASTRONOMY CLUB</h1>
           <h3 className="iitr">IIT ROORKEE</h3>
         </div>
         <img
@@ -57,7 +57,7 @@ export default function Home() {
             data-aos-easing="ease-in-out"
           >
             <NavLink to="/about-us">
-              <h1 className="know-header">What do we do at PaAC?</h1>
+              <h1 className="know-header" data-cursor-text="Click">What do we do at PaAC?</h1>
             </NavLink>
             <p className="know-body">
               Formerly known as the Star-gazing section, our group directly
@@ -102,13 +102,13 @@ export default function Home() {
         >
           <div className="home-events-heading-container">
             <NavLink to="/events" className="home-events-link">
-              <h1 className="home-events-heading">
+              <h1 className="home-events-heading" data-cursor-text="Click">
                 Exploring the Cosmos: Engaging Events conducted by PaAC
               </h1>
             </NavLink>
           </div>
 
-          <div className="home-events-carousel">
+          <div className="home-events-carousel" data-cursor-text="Drag">
             <HomeEvents />
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function Home() {
         >
           <div className="home-gallery-top">
             <h1 className="home-gallery-text">Photos</h1>
-            <NavLink to="/gallery" className="home-gallery-text">
+            <NavLink to="/gallery" className="home-gallery-text" data-cursor-text="Photos">
               More
             </NavLink>
           </div>

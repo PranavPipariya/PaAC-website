@@ -3,20 +3,34 @@ body {
   background-color: #07072f;
   color: white;
   box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: lighter;
   letter-spacing: 0.1vw;
   word-spacing: 0.2vh;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Outfit", sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Josefin Sans", sans-serif;
 }
 
+::selection {
+  background-color: #faddff;
+  color: #07072f;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-/* check if this looks good on small screens */
 body::-webkit-scrollbar {
   width: 0.5vw;
   border-radius: 25px;
