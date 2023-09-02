@@ -18,6 +18,10 @@ function App() {
       container: document.body,
       speed: 0.6,
     });
+
+    return () => {
+      cursor.destroy();
+    }
   }, []);
 
   const router = createBrowserRouter([

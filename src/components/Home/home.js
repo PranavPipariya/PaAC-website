@@ -108,7 +108,7 @@ export default function Home() {
             </NavLink>
           </div>
 
-          <div className="home-events-carousel">
+          <div className="home-events-carousel" data-cursor-text="Drag">
             <HomeEvents />
           </div>
         </div>
