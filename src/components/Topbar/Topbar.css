@@ -11,10 +11,7 @@
   z-index: 100;
   font-family: 'Outfit', sans-serif;
 }
-.logo {
-  width: 5vw;
-  height: 5vw;
-}
+
 .topbar-top a.active {
   background-color: transparent;
 }

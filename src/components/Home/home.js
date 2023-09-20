@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Achievement from "../Achievement/Achievement";
 import HomeEvents from "./HomeEvents";
+import Logo from "./Logo";
 
 export default function Home() {
   useEffect(() => {
@@ -17,49 +18,53 @@ export default function Home() {
   }, []);
   AOS.init({ duration: 1000 });
   return (
-    <div className="home-container">
-      <div className="home-topbar">
-        <Topbar />
+    <>
+      <div className="logo-div">
+        <Logo></Logo>
       </div>
-      <div className="home-info">
-        <img
-          src={Ellipse}
-          className="ellipse"
-          alt=""
-          data-aos="fade-right"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
-        ></img>
-        <div
-          className="home-title"
-          data-aos="fade-up"
-          data-aos-easing="ease-in-out"
-          data-aos-once="false"
-        >
-          <h1 className="club">PHYSICS AND ASTRONOMY CLUB</h1>
-          <h3 className="iitr">IIT ROORKEE</h3>
+      <div className="home-container">
+        <div className="home-topbar">
+          <Topbar />
         </div>
-        <img
-          src={Planet}
-          className="planet"
-          alt=""
-          data-aos="fade-left"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
-        ></img>
-      </div>
-      <div className="home-body">
-        <div className="know-paac-container">
-          <div
-            className="paac-desc"
-            data-aos="fade-up"
+        <div className="home-info">
+          <img
+            src={Ellipse}
+            className="ellipse"
+            alt=""
+            data-aos="fade-right"
             data-aos-once="false"
             data-aos-easing="ease-in-out"
+          ></img>
+          <div
+            className="home-title"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
           >
-            <NavLink to="/about-us">
-              <h1 className="know-header" data-cursor-text="Click">What do we do at PaAC?</h1>
-            </NavLink>
-            <p className="know-body">
+            <h1 className="club">PHYSICS AND ASTRONOMY CLUB</h1>
+            <h3 className="iitr">IIT ROORKEE</h3>
+          </div>
+          <img
+            src={Planet}
+            className="planet"
+            alt=""
+            data-aos="fade-left"
+            data-aos-once="false"
+            data-aos-easing="ease-in-out"
+          ></img>
+        </div>
+        <div className="home-body">
+          <div className="know-paac-container">
+            <div
+              className="paac-desc"
+              data-aos="fade-up"
+              data-aos-once="false"
+              data-aos-easing="ease-in-out"
+            >
+              <NavLink to="/about-us">
+                <h1 className="know-header">What do we do at PaAC?</h1>
+              </NavLink>
+              {/* <p className="know-body">
               Formerly known as the Star-gazing section, our group directly
               operates under the Student Technical Council of IITR and Office of
               Dean-sponsored research and industrial consultancy. The group is a
@@ -72,63 +77,68 @@ export default function Home() {
               club frequently engages in research paper discussions and also in
               open informal group discussions on various mathematical and
               physical science topics.
-            </p>
+            </p> */}
+            </div>
+            <div
+              className="paac-gp"
+              data-aos="fade-up"
+              data-aos-once="false"
+              data-aos-easing="ease-in-out"
+            >
+              Group Photo
+              <img src="" alt=""></img>
+            </div>
           </div>
           <div
-            className="paac-gp"
+            className="home-achievement"
             data-aos="fade-up"
             data-aos-once="false"
             data-aos-easing="ease-in-out"
           >
-            Group Photo
-            <img src="" alt=""></img>
-          </div>
-        </div>
-        <div
-          className="home-achievement"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
-        >
-          <Achievement />
-        </div>
-
-        {/* ---------Home Events------------ */}
-        <div
-          className="home-events-section"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
-        >
-          <div className="home-events-heading-container">
-            <NavLink to="/events" className="home-events-link">
-              <h1 className="home-events-heading" data-cursor-text="Click">
-                Exploring the Cosmos: Engaging Events conducted by PaAC
-              </h1>
-            </NavLink>
+            <Achievement />
           </div>
 
-          <div className="home-events-carousel" data-cursor-text="Drag">
-            <HomeEvents />
+          {/* ---------Home Events------------ */}
+          <div
+            className="home-events-section"
+            data-aos="fade-up"
+            data-aos-once="false"
+            data-aos-easing="ease-in-out"
+          >
+            <div className="home-events-heading-container">
+              <NavLink to="/events" className="home-events-link">
+                <h1 className="home-events-heading">
+                  Exploring the Cosmos: Engaging Events conducted by PaAC
+                </h1>
+              </NavLink>
+            </div>
+
+            <div className="home-events-carousel">
+              <HomeEvents />
+            </div>
           </div>
-        </div>
-        {/* ------------Home Events Finishes------------ */}
-        <div
-          className="home-gallery"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
-        >
-          <div className="home-gallery-top">
-            <h1 className="home-gallery-text">Photos</h1>
-            <NavLink to="/gallery" className="home-gallery-text" data-cursor-text="Photos">
-              More
-            </NavLink>
+          {/* ------------Home Events Finishes------------ */}
+          <div
+            className="home-gallery"
+            data-aos="fade-up"
+            data-aos-once="false"
+            data-aos-easing="ease-in-out"
+          >
+            <div className="home-gallery-top">
+              <h1 className="home-gallery-text">Photos</h1>
+              <NavLink
+                to="/gallery"
+                className="home-gallery-text"
+                data-cursor-text="Photos"
+              >
+                More
+              </NavLink>
+            </div>
+            <img className="home-gallery-img" src={Gallery} alt=""></img>
           </div>
-          <img className="home-gallery-img" src={Gallery} alt=""></img>
+          <Footer />
         </div>
-        <Footer />
       </div>
-    </div>
+    </>
   );
 }

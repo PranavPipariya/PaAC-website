@@ -1,0 +1,37 @@
+.logo {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+.logo-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.logo-container :hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+/* need to add lots of media queries to make the text perfectly responsive */
+.text {
+  font-size: 15.5px;
+}
+#rotatingText {
+    font-family: "Outfit";
+    animation-name: rotate-circle;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rotate-circle {
+    to {
+      transform: rotate(1turn);
+    }
+  }
