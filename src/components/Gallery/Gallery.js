@@ -1,64 +1,86 @@
-import React, { useEffect } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import "./Gallery.css";
-import Topbar from "../Topbar/Topbar";
-import Footer from "../Footer/Footer";
-import { Carousel } from 'react-carousel-minimal';
-import {data} from "./Images.js";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import Topbar from "../Topbar/Topbar";
+// import Footer from "../Footer/Footer";
+// import { data } from "./Images.js";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function Gallery() {
-  AOS.init({duration:1000})
-  useEffect(() => {
-    window.scrollTo(0,0);
+  const comp = useRef();
+  gsap.registerPlugin(ScrollTrigger);
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      let sections = gsap.utils.toArray(".panel");
+      gsap.to(
+        sections,
+        {
+          xPercent: -100 * (sections.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".gallery-body",
+            pin: true,
+            scrub: 1,
+            snap: 1 / (sections.length - 1),
+            markers: true, // remove later
+            end: "+=3500",
+          },
+        },
+        []
+      );
+    }, comp);
+
+    return () => ctx.revert();
   }, []);
-  const captionStyle = {
-    fontSize: '2em',
-    fontWeight: 'bold',
-  }
-  const slideNumberStyle = {
-    fontSize: '20px',
-    fontWeight: 'bold',
-  }
+
   return (
-    <div className="gallery-container" >
-        <div className="gallery-topbar">
-            <Topbar />
+    <div className="gallery-container" ref={comp}>
+      {/* <div className="gallery-topbar">
+        <Topbar />
+      </div> */}
+      <div className="gallery-body">
+        <div className="panel a">
+          <div className="panel-content">
+            <h1>PaAC at udaipur</h1>
+            <p>kya matlab ham sote hi nhi</p>
+          </div>
         </div>
-      <div data-aos="fade-up" data-aos-once="false" data-aos-easing="ease-in-out" style={{ textAlign: "center" }}>
-        <div style={{
-          padding: "0 20px"
-        }}>
-          <Carousel
-            data={data}
-            time={2000}
-            width="850px"
-            height="500px"
-            captionStyle={captionStyle}
-            radius="10px"
-            slideNumber={true}
-            slideNumberStyle={slideNumberStyle}
-            captionPosition="bottom"
-            automatic={true}
-            dots={true}
-            pauseIconColor="white"
-            pauseIconSize="40px"
-            slideBackgroundColor="transparent"
-            slideImageFit="cover"
-            thumbnails={true}
-            thumbnailWidth="100px"
-            style={{
-              textAlign: "center",
-              maxWidth: "850px",
-              maxHeight: "500px",
-              margin: "40px auto",
-            }}
-          />
+        <div className="panel b">
+        <div className="panel-content">
+            <h1>PaAC at udaipur</h1>
+            <p>kya matlab ham sote hi nhi</p>
+          </div>
+        </div>
+        <div className="panel c">
+        <div className="panel-content">
+            <h1>PaAC at udaipur</h1>
+            <p>kya matlab ham sote hi nhi</p>
+          </div>
+        </div>
+        <div className="panel d">
+        <div className="panel-content">
+            <h1>PaAC at udaipur</h1>
+            <p>kya matlab ham sote hi nhi</p>
+          </div>
+        </div>
+        <div className="panel e">
+        <div className="panel-content">
+            <h1>PaAC at udaipur</h1>
+            <p>kya matlab ham sote hi nhi</p>
+          </div>
+        </div>
+        <div className="panel f">
+        <div className="panel-content">
+            <h1>PaAC at udaipur</h1>
+            <p>kya matlab ham sote hi nhi</p>
+          </div>
         </div>
       </div>
-      <div className="gallery-footer">
+
+      {/* <div className="gallery-footer">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

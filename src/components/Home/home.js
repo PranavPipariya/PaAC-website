@@ -118,7 +118,7 @@ export default function Home() {
             </div>
           </div>
           {/* ------------Home Events Finishes------------ */}
-          <div
+          {/* <div
             className="home-gallery"
             data-aos="fade-up"
             data-aos-once="false"
@@ -135,7 +135,7 @@ export default function Home() {
               </NavLink>
             </div>
             <img className="home-gallery-img" src={Gallery} alt=""></img>
-          </div>
+          </div> */}
           <Footer />
         </div>
       </div>
