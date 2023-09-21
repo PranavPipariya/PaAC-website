@@ -11,6 +11,19 @@
   box-sizing: border-box;
   /* overflow: hidden; */
 }
+.logo-div {
+  z-index: 2;
+  position: absolute;
+  bottom: 5vh;
+  right: 5vh;
+  width: 200px;
+  height: 200px;
+}
+@media screen and (max-width: 760px) {
+  .logo-div {
+    display: none;
+  }
+}
 
 .active {
   background-color: none;
