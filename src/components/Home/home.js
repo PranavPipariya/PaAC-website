@@ -4,7 +4,6 @@ import Footer from "../Footer/Footer";
 import "./home.css";
 import Ellipse from "../assets/Primary.png";
 import Planet from "../assets/Planet.png";
-import Gallery from "../assets/Gallery.png";
 import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -118,24 +117,6 @@ export default function Home() {
             </div>
           </div>
           {/* ------------Home Events Finishes------------ */}
-          {/* <div
-            className="home-gallery"
-            data-aos="fade-up"
-            data-aos-once="false"
-            data-aos-easing="ease-in-out"
-          >
-            <div className="home-gallery-top">
-              <h1 className="home-gallery-text">Photos</h1>
-              <NavLink
-                to="/gallery"
-                className="home-gallery-text"
-                data-cursor-text="Photos"
-              >
-                More
-              </NavLink>
-            </div>
-            <img className="home-gallery-img" src={Gallery} alt=""></img>
-          </div> */}
           <Footer />
         </div>
       </div>
