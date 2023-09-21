@@ -4,6 +4,7 @@ import LogoImg from "../assets/logo.png";
 import "./logo.css";
 
 export default function Logo() {
+
   return (
     <NavLink to="/">
       <div className="logo-container">
@@ -28,7 +29,7 @@ export default function Logo() {
               stroke="none"
               fill="white"
             >
-              PHYSICS AND ASTRONOMY CLUB | IIT ROORKEE |
+              PHYSICS AND ASTRONOMY CLUB IIT ROORKEE 
             </textPath>
           </text>
         </svg>

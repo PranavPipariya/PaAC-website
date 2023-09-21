@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Topbar.css";
 import { DensityMedium } from "@mui/icons-material";
-
+import Logo from "../assets/iitr_logo.png";
 export default function Topbar() {
   const [toggle, setToggle] = useState(true);
   function handleToggle() {
@@ -11,7 +11,9 @@ export default function Topbar() {
   return (
     <div className="topbar-container">
       <div className="topbar-top">
-
+        <NavLink to="/">
+          <img src={Logo} className="small-screen-logo" alt=""></img>
+        </NavLink>
       </div>
       <button
         className={"toggle-btn " + (toggle ? "closed" : "")}

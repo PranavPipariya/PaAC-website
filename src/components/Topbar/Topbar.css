@@ -11,7 +11,15 @@
   z-index: 100;
   font-family: 'Outfit', sans-serif;
 }
-
+.small-screen-logo {
+  width: 5vw;
+  height: 5vw;
+}
+@media screen and (min-width: 760px) {
+  .small-screen-logo {
+    display: none;
+  }
+}
 .topbar-top a.active {
   background-color: transparent;
 }
