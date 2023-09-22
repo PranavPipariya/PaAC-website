@@ -5,7 +5,6 @@
 }
 
 .gallery-body {
-  width: 600%; /* number of panels*/
   height: 100%;
   overscroll-behavior: none;
   display: flex;
@@ -17,30 +16,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-}
-.a {
-  background-image: url("../../../public/star_trail.jpg");
-}
-.b {
-  background-image: url("../../../public/comet.jpg");
-}
-.c {
-  background-image: url("../../../public/space.jpg");
-}
-.d {
-  background-image: url("../../../public/space2.jpg");
-}
-.e {
-  background-image: url("../../../public/space.jpg");
-}
-.f {
-  background-image: url("../../../public/space2.jpg");
 }
 .panel-content {
-    position: absolute;
-    left: 50vw;
-    bottom: 0;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50vw;
+  bottom: 0;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
-
