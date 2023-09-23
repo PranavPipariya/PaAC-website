@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef } from "react";
 import "./About.css";
 import Topbar from "../Topbar/Topbar";
-import Footer from "../Footer/Footer";
-import { Secy, Head, Member } from "./Data.js";
-import Card from "./Card";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import Footer from "../Footer/Footer";
+// import { Secy, Head, Member } from "./Data.js";
+// import Card from "./Card";
 import Spline from "@splinetool/react-spline";
 
 export default function About() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  AOS.init({ duration: 600 });
+  const model = useRef(null);
+  function onLoad(spline) {
+    const obj = spline.findObjectByName("einstein");
+    model.current = obj;
+  }
+
   // const [year, setYear] = useState(4);
   return (
     <div className="about-container">
@@ -20,8 +20,42 @@ export default function About() {
         <Topbar />
       </div>
       <div className="about-parent">
-        <div className="about-intro">
-          <Spline scene="https://prod.spline.design/p5QUEugrUKi3Nm20/scene.splinecode" />
+        <div className="about-text">
+          <div className="about-panel">
+            <div className="spline-text">
+              <div className="about-spline">
+                <Spline
+                  scene="https://prod.spline.design/p5QUEugrUKi3Nm20/scene.splinecode"
+                  onLoad={onLoad}
+                />
+              </div>
+              <h1>Physics and Astronomy Outreach Events</h1>
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+              harum natus cum quia necessitatibus alias magni, assumenda
+              distinctio earum unde atque magnam obcaecati delectus laborum
+              voluptatibus officia! Tempora, neque deleniti!
+            </p>
+          </div>
+          <div className="about-panel">
+            <h1>Stargazing sessions and Astrophotography</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+              harum natus cum quia necessitatibus alias magni, assumenda
+              distinctio earum unde atque magnam obcaecati delectus laborum
+              voluptatibus officia! Tempora, neque deleniti!
+            </p>
+          </div>
+          <div className="about-panel">
+            <h1>Journal club discussions</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+              harum natus cum quia necessitatibus alias magni, assumenda
+              distinctio earum unde atque magnam obcaecati delectus laborum
+              voluptatibus officia! Tempora, neque deleniti!
+            </p>
+          </div>
         </div>
       </div>
 
@@ -30,7 +64,7 @@ export default function About() {
                     {Secy.map((value) => (
                     <Card
                     id = {value.name}
-                    name={value.name} 
+                    name={value.name}
                     img = {value.image}
                     position ={value.position}
                     linkedIn = {value.linkedIn}
@@ -76,9 +110,9 @@ export default function About() {
                 })}
                 </div> */}
       </div>
-      <div className="about-footer">
+      {/* <div className="about-footer">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }
