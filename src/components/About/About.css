@@ -7,14 +7,19 @@
 .about-topbar{
     width: 100%;
 }
+.about-parent {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
 .about-intro{
-    width: 80%;
-    letter-spacing: 1.5px;
+    width: 50%;
+    /* letter-spacing: 1.5px;
     word-spacing: 2.5px;
     margin-top: 10vh;
     position: relative;
     padding: 10vw;
-    padding-bottom: 2vw;
+    padding-bottom: 2vw; */
 }
 .intro-title{
     position: absolute;

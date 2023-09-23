@@ -2,58 +2,33 @@ import React, { useEffect, useState } from "react";
 import "./About.css";
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
-import {Secy, Head, Member} from "./Data.js";
+import { Secy, Head, Member } from "./Data.js";
 import Card from "./Card";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Spline from "@splinetool/react-spline";
 
-export default function About(){
-    useEffect(() => {
-        window.scrollTo(0,0);
-    }, []);
-    AOS.init({ duration : 600});
-    const [year, setYear] = useState(4);
-    return(
-        <div className="about-container">
-            <div className="about-topbar">
-                <Topbar />
-            </div>
-            <div className="about-intro" >
-                <span className="intro-title" data-aos="fade-up-right" data-aos-once="false" data-aos-easing="ease-in-out">About Us</span>
+export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  AOS.init({ duration: 600 });
+  // const [year, setYear] = useState(4);
+  return (
+    <div className="about-container">
+      <div className="about-topbar">
+        <Topbar />
+      </div>
+      <div className="about-parent">
+        <div className="about-intro">
+          <Spline scene="https://prod.spline.design/p5QUEugrUKi3Nm20/scene.splinecode" />
+        </div>
+      </div>
 
-                <div className="intro-para" data-aos="fade-up-left" data-aos-once="false" data-aos-easing="ease-in-out">
-                    <p>The people at PaAC are usually a part of 4 clusters.</p>
-                    <div className="intro-vertical-parent">
-                    <div className="intro-vertical">
-                        <h2>Physics Nebula</h2>
-                        <p className="intro-vertical-text">These are people who love discussing anything theoretical physics.
-                        We organise  group discussions, lectures and open projects (even the pandemic could not stop us from launching a 5-part zoom lecture series).
-                        We have had some of the most prominent names in the field of physics and world-renowned speakers present talks where the participants get a chance to interact with some of the best minds in physics of our time.
-                        Being science enthusiasts, we also organise fun quizzes and contests.</p>
-                    </div>
-                    <div className="intro-vertical">
-                        <h2>Mathematics Nebula</h2>
-                        <p className="intro-vertical-text">We love sharing our love for mathematics and our goal is to foster a community of like-minded individuals.
-                        We have organised gruelling integration tournaments in which teams have had to battle through 7 consecutive tie-breakers to get to the finals.
-                        If this sounds like a dream come true, well, hop on aboard!</p>
-                    </div>
-                    <div className="intro-vertical">
-                        <h2>Astronomy Nebula</h2>
-                        <p className="intro-vertical-text">We are intrepid minds, undeterred by Roorkee's frigid winters, drawn to the enchanting night skies.
-                        With cameras in hand, we capture celestial marvels and process them.
-                        We also organise star-gazing and telescope handling sessions for the IITR junta. </p>
-                    </div>
-                    <div className="intro-vertical">
-                        <h2>Operations Nebula</h2>
-                        <p className="intro-vertical-text">The lovely people at operations are responsible for the beautiful designs and for managing all these events and sessions to fruition.</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div className="members">
-                <div className="members-secys" data-aos="fade-up" data-aos-once="false" data-aos-easing="ease-in-out">
-                    {Secy.map((value) => ( 
-                    <Card 
+      <div className="members">
+        {/* <div className="members-secys" data-aos="fade-up" data-aos-once="false" data-aos-easing="ease-in-out">
+                    {Secy.map((value) => (
+                    <Card
                     id = {value.name}
                     name={value.name} 
                     img = {value.image}
@@ -99,11 +74,11 @@ export default function About(){
                     }
                     return null;
                 })}
-                </div>
-            </div>
-            <div className="about-footer">
-            <Footer />
-            </div>
-        </div>
-    )
+                </div> */}
+      </div>
+      <div className="about-footer">
+        <Footer />
+      </div>
+    </div>
+  );
 }
