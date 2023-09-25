@@ -9,7 +9,7 @@
   margin: 1vw;
   width: 98%;
   z-index: 100;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .small-screen-logo {
   width: 5vw;
@@ -26,13 +26,7 @@
 .topbar-navs {
   padding: 1vw;
   font-size: max(1.5vw, 20px);
-  background-color: #07072f00; /* chnage*/
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.7px);
-  -webkit-backdrop-filter: blur(4.7px);
+  background-color: #07072f;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -47,8 +41,6 @@
 }
 .nav-btns a.active {
   color: #faf9f1;
-  background-color: #07072f00; /*chnage*/
-
   text-decoration: underline;
   text-underline-offset: 7px;
   text-decoration-thickness: 3px;
@@ -100,39 +92,40 @@
     margin: 0;
   }
   .topbar-navs {
-    width: 30%;
+    width: 25%;
+    min-width: 150px;
     background-color: transparent;
     margin-right: 0;
-    padding-right: 0;
+    padding: 0;
     transition: all 0.75s ease-in-out;
     display: flex;
+    position: relative;
+    right: .5rem;
     flex-direction: column;
     align-items: center;
     font-weight: 450;
-    border-radius: 0;
+    border-radius: 2rem;
   }
   .nav-toggle {
     height: 5vh;
   }
   .nav-btns {
     width: 100%;
-    background-color: white;
+    border: .2rem solid #e4b6a5;
+    border-radius: 1rem;
+    background-color: #ebc5b7f5;
     display: flex;
     flex-direction: column;
     padding-left: 0;
-    /* From https://css.glass */
-    /* background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.7px);
-  -webkit-backdrop-filter: blur(4.7px); */
     height: 30vh;
     padding-top: 0;
     justify-content: space-evenly;
   }
   .nav-btn {
-    color: black;
-    font-size: 3vw;
+    color: #07072f;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0rem .8rem; 
   }
   .toggle-btn {
     display: flex;
