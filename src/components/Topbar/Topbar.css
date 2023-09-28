@@ -9,7 +9,7 @@
   margin: 1vw;
   width: 98%;
   z-index: 100;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 .small-screen-logo {
   width: 5vw;
@@ -26,7 +26,13 @@
 .topbar-navs {
   padding: 1vw;
   font-size: max(1.5vw, 20px);
-  background-color: #07072f;
+  /* background-color: #07072f; */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -100,7 +106,7 @@
     transition: all 0.75s ease-in-out;
     display: flex;
     position: relative;
-    right: .5rem;
+    right: 0.5rem;
     flex-direction: column;
     align-items: center;
     font-weight: 450;
@@ -111,10 +117,13 @@
   }
   .nav-btns {
     width: 100%;
-    border: .2rem solid #e4b6a5;
+    border: 0.2rem solid #e4b6a5;
     border-radius: 1rem;
     background-color: #ebc5b7f5;
     display: flex;
+    top: 6vh;
+    position: relative;
+    right: 1vw;
     flex-direction: column;
     padding-left: 0;
     height: 30vh;
@@ -125,7 +134,7 @@
     color: #07072f;
     font-size: 1rem;
     text-align: center;
-    margin: 0rem .8rem; 
+    margin: 0rem 0.8rem;
   }
   .toggle-btn {
     display: flex;
