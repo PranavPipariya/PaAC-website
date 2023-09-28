@@ -152,7 +152,9 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  width: 15rem;
+  width: 85%; 
+  max-width: 350px;
+  height: 500px;
   border-radius: 24px;
   background-color: #1c1d24;
   opacity: 0.9;
@@ -186,11 +188,28 @@
   border-radius: 24px;
 }
 .home-events-photo {
-  object-fit: cover;
+  /* object-fit: cover;  */
   max-height: 100%;
   max-width: 100%;
   border-radius: 24px;
 }
+
+@media screen and (max-width: 770px) {
+  .home-event-card{
+    width: 300px;
+    margin: auto;
+  }
+  
+  img.home-events-photo{
+    width: 250px;
+  }
+
+  .splide__slide{
+    width: 45% !important;
+    min-width: 380px ;
+  }
+}
+
 /* ------------Home Events Styling Finishes Here------------ */
 
 .home-gallery {
