@@ -145,4 +145,8 @@
   .hide {
     display: none;
   }
+  .MuiSvgIcon-root{
+    margin: auto;
+    color: #e4b6a5;
+  }
 }
