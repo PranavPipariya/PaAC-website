@@ -17,7 +17,7 @@ function App() {
     if (window.matchMedia('(pointer:fine)').matches) {
       const cursor = new MouseFollower({
         container: document.body,
-        speed: 0.5,
+        speed: 0.3,
       });
       return () => {
         cursor.destroy();
