@@ -41,7 +41,7 @@ import kothadia from "..//assets/members/WhatsApp Image 2023-10-05 at 15.53.23_5
 import AASTHA from "..//assets/members//WhatsApp Image 2023-10-10 at 03.05.35 - AASTHA KAPOOR.png";
 import TSEWANG from "..//assets/members/my pic pAac - TSEWANG KHASPHEL 22324024.png";
 import pranav from "..//assets/members/pranav.png";
-
+import adithv from "..//assets/members/IMG_20230830_112716_376 - ADITH V R 21122006.png";
 const Secys = [
     {
         name : "Kriti",
@@ -372,6 +372,14 @@ const Members = [
     {
         name : " Jeevika",
         image : gjeevika,
+        position : "Member",
+        linkedIn : "",
+        email : "",
+        year : 3,
+    },
+    {
+        name : " Adith V",
+        image : adithv,
         position : "Member",
         linkedIn : "",
         email : "",
