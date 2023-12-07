@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Home from "./components/Home/home";
 import Events from "./components/Events/Events";
-import About from "./components/About/About";
+import Member from "./components/People/People";
 import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -10,6 +10,8 @@ import { useEffect } from "react";
 import MouseFollower from "mouse-follower";
 import gsap from "gsap";
 import "./components/assets/mouseFollower.css";
+import Library from "./components/Library/Library";
+import OpenProjects from "./components/OpenProjects/OpenProjects";
 
 function App() {
   useEffect(() => {
@@ -28,9 +30,11 @@ function App() {
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
     { path: "/events", element: <Events /> },
-    { path: "/about-us", element: <About /> },
+    { path: "/people", element: <Member /> },
     { path: "/gallery", element: <Gallery /> },
     { path: "/contact-us", element: <Contact /> },
+    { path: "/library", element: <Library /> },
+    { path: "/open-projects", element: <OpenProjects /> },
   ]);
   return (
     <React.StrictMode>
