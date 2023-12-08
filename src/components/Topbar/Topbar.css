@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 .topbar-container {
   display: flex;
@@ -9,30 +10,37 @@
   margin: 1vw;
   width: 98%;
   z-index: 100;
-  font-family: "Outfit", sans-serif;
 }
 .small-screen-logo {
   width: 5vw;
   height: 5vw;
 }
-.moreMenuLinks{
+.responsiveMenuLinks{
   display: none;
 }
 .expandedMenu{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   position: absolute;
   right: 0rem;
-  top: 3.5rem;
+  top: max(3rem, 3.5vw);
   background-color: rgba(255,255,255,0.04);
   padding: .5rem 1rem;
   border-radius: 10px;
+  font-size: larger;
 }
 .expandedNavLinks{
-  margin: .5rem 0 !important;
+  /* font-size: larger; */
+  margin: 0.3rem auto !important;
 }
+/* a.expandedNavLinks.active {
+  color: #faf9f1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+} */
+
 @media screen and (min-width: 760px) {
   .small-screen-logo {
     display: none;
@@ -67,7 +75,7 @@
 .nav-btns a.active {
   color: #faf9f1;
   text-decoration: underline;
-  text-underline-offset: 7px;
+  text-underline-offset: 4px;
   text-decoration-thickness: 3px;
 }
 .nav-btns :hover {
@@ -178,7 +186,7 @@
   .moreMenu{
     display: none;
   }
-  .moreMenuLinks{
+  .responsiveMenuLinks{
     display: block;
   }
   .expandedMenu{
@@ -186,9 +194,3 @@
   }
 }
 
-.expandedNavLinks.active {
-      color: #faf9f1;
-      text-decoration: underline;
-      text-underline-offset: 7px;
-      text-decoration-thickness: 3px;
-}

@@ -1,6 +1,6 @@
 import React from 'react'
 import Topbar from '../Topbar/Topbar'
-
+import './Library.css'
 
 const Library = () => {
   return (
@@ -8,7 +8,9 @@ const Library = () => {
       <div className="about-topbar">
         <Topbar />
       </div>
-      <div>Library</div>
+      <div className='container'>
+
+      </div>
     </>
   )
 }
