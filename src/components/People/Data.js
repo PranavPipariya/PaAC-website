@@ -1,6 +1,6 @@
 import kriti from "../assets/members/kriti.png";
 import abhijeet from "../assets/members/abhijeet.png";
-import kaustav from "../assets/members/kaustav.png";
+// import kaustav from "../assets/members/kaustav.png";
 import manchuriyan from "../assets/members/manchuriyan.png";
 import krish from "../assets/members/krish.png";
 import rajnish from "../assets/members/rajnish.png";
