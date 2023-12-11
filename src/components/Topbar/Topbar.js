@@ -111,9 +111,9 @@ export default function Topbar() {
           <NavLink to="/open-projects" className="nav-btn responsiveMenuLinks">
             Open Projects
           </NavLink>
-          <NavLink to="/people" className="nav-btn responsiveMenuLinks">
+          {/* <NavLink to="/people" className="nav-btn responsiveMenuLinks">
             Our Team
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </div>
