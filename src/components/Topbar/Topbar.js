@@ -9,8 +9,9 @@ import {
 } from "@mui/icons-material";
 import Logo from "../assets/iitr_logo.png";
 export default function Topbar() {
-  const [moreMenu, setMoreMenu] = useState(false);
-  const [toggle, setToggle] = useState(true);
+  // const [moreMenu, setMoreMenu] = useState(false);
+  const [eventMenu, setEventMenu] = useState(false);
+  const [toggle, setToggle] = useState(false);
   function handleToggle() {
     setToggle(!toggle);
   }
@@ -30,56 +31,89 @@ export default function Topbar() {
       <div className="topbar-navs">
         <div className={"nav-btns " + (toggle ? "hide" : "")}>
           <NavLink to="/" className="nav-btn">
-            HOME
+            Home
           </NavLink>
-          <button
+          <NavLink to="/people" className="nav-btn">
+            About Us
+          </NavLink>
+          {/* <button
             className="nav-btn moreMenu"
             onClick={() => {
               setMoreMenu(!moreMenu);
             }}
           >
-            ABOUT US
+            About us
             {moreMenu ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
             {moreMenu ? (
               <div className="expandedMenu">
                 <NavLink to="/library" className="nav-btn expandedNavLinks">
-                  LIBRARY
+                  Library
                 </NavLink>
                 <NavLink
                   to="/open-projects"
                   className="nav-btn expandedNavLinks"
                 >
-                  OPEN PROJECTS
+                  Open Projects
+                </NavLink>
+                <NavLink to="/people" className="nav-btn expandedNavLinks">
+                  Our Team
+                </NavLink>
+              </div>
+            ) : (
+              <></>
+            )}
+          </button> */}
+          {/* <NavLink to="/events" className="nav-btn">
+            Events
+          </NavLink> */}
+          <button
+            className="nav-btn moreMenu"
+            onClick={() => {
+              setEventMenu(!eventMenu);
+            }}
+          >
+            Events
+            {eventMenu ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+            {eventMenu ? (
+              <div className="expandedMenu">
+                <NavLink to="/library" className="nav-btn expandedNavLinks">
+                  Library
                 </NavLink>
                 <NavLink
-                  to="/people"
+                  to="/open-projects"
                   className="nav-btn expandedNavLinks"
                 >
-                  OUR TEAM
+                  Open Projects
+                </NavLink>
+                <NavLink
+                  to="/jc"
+                  className="nav-btn expandedNavLinks"
+                >
+                  JC Discussions
                 </NavLink>
               </div>
             ) : (
               <></>
             )}
           </button>
-          <NavLink to="/events" className="nav-btn">
-            EVENTS
-          </NavLink>
           <NavLink to="/gallery" className="nav-btn">
-            GALLERY
+            Gallery
           </NavLink>
-          <NavLink to="/contact-us" className="nav-btn">
-            CONTACT US
+          {/* <NavLink to="/contact-us" className="nav-btn">
+            Contact us
+          </NavLink> */}
+          <NavLink to="/inventory" className="nav-btn">
+            Inventory
           </NavLink>
           <NavLink to="/library" className="nav-btn responsiveMenuLinks">
-            LIBRARY
+            Library
           </NavLink>
           <NavLink to="/open-projects" className="nav-btn responsiveMenuLinks">
-            OPEN PROJECTS
+            Open Projects
           </NavLink>
-          <NavLink to="/people" className="nav-btn responsiveMenuLinks">
-            OUR TEAM
-          </NavLink>
+          {/* <NavLink to="/people" className="nav-btn responsiveMenuLinks">
+            Our Team
+          </NavLink> */}
         </div>
       </div>
     </div>

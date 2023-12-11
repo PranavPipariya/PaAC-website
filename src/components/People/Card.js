@@ -9,7 +9,7 @@ export default function Card(props) {
     AOS.init({duration : 1000})
     return(
         <div className="card-container" data-aos="fade-up" data-aos-once="false" data-aos-easing="ease-in-out">
-            <img className="card-image" src={props.img || Logo} alt=""></img>
+            <img className="card-image" loading="lazy" src={props.img || Logo} alt=""></img>
             <h1 className="card-name">{props.name}</h1>
             <h2 className="card-position">({props.position})</h2>
             <div className="card-contacts">
