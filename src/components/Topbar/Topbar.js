@@ -71,13 +71,13 @@ export default function Topbar() {
           <NavLink to="/contact-us" className="nav-btn">
             CONTACT US
           </NavLink>
-          <NavLink to="/library" className="nav-btn moreMenuLinks">
+          <NavLink to="/library" className="nav-btn responsiveMenuLinks">
             LIBRARY
           </NavLink>
-          <NavLink to="/open-projects" className="nav-btn moreMenuLinks">
+          <NavLink to="/open-projects" className="nav-btn responsiveMenuLinks">
             OPEN PROJECTS
           </NavLink>
-          <NavLink to="/open-projects" className="nav-btn moreMenuLinks">
+          <NavLink to="/people" className="nav-btn responsiveMenuLinks">
             OUR TEAM
           </NavLink>
         </div>
