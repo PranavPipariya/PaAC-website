@@ -11,7 +11,7 @@ import Logo from "../assets/iitr_logo.png";
 export default function Topbar() {
   const [moreMenu, setMoreMenu] = useState(false);
   const [eventMenu, setEventMenu] = useState(false);
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   function handleToggle() {
     setToggle(!toggle);
   }
