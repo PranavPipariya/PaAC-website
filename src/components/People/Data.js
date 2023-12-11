@@ -21,7 +21,7 @@ import manav from "../assets/members/manav.png";
 import reeshita from "../assets/members/reeshita.png";
 import sherry from "../assets/members/sherry.png";
 import sisir from "../assets/members/sisir.png";
-// import sudharsan from "../assets/members/sudharsan.png";
+import sudharsan from "../assets/members/sudharsan.png";
 import sumit from "../assets/members/sumit.png";
 import suryansh from "../assets/members/suryansh.png";
 import susmit from "../assets/members/susmit.png";
@@ -377,7 +377,7 @@ const Members = [
 
   {
     name: "Vanshaj Kerni",
-    image: vanshaj,
+    image: "",
     position: "Member",
     linkedIn: "",
     email: "",
