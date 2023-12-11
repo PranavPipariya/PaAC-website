@@ -15,24 +15,28 @@
   width: 5vw;
   height: 5vw;
 }
-.responsiveMenuLinks{
+.responsiveMenuLinks {
   display: none;
 }
-.expandedMenu{
+.nav-btn > .MuiSvgIcon-root {
+  position: relative;
+  top: 5px;
+}
+.expandedMenu {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  right: 0rem;
+  right: -1rem;
   top: max(3rem, 3.5vw);
-  background-color: rgba(255,255,255,0.04);
-  padding: .5rem 1rem;
+  background-color: #050528;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
-  font-size: larger;
+  font-size: 1rem;
 }
-.expandedNavLinks{
+.expandedNavLinks {
   /* font-size: larger; */
-  margin: 0.3rem auto !important;
+  margin: .5rem auto !important;
 }
 /* a.expandedNavLinks.active {
   color: #faf9f1;
@@ -40,7 +44,28 @@
   text-underline-offset: 3px;
   text-decoration-thickness: 3px;
 } */
-
+.nav-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 30%;
+  bottom: -3px;
+  width: 40%;
+  height: 3px;
+  background-color: #eca674;
+  transition: all 1s ease-out;
+  transform-origin: bottom right;
+}
+.nav-btn.active::before{
+  content: "";
+  position: absolute;
+  left: min(20%, 1rem);
+  bottom: -5px;
+  width: 55%;
+  height: 3px;
+  background-color: #eca674;
+  transition: width .5s ease;
+  transform-origin: bottom right;
+}
 @media screen and (min-width: 760px) {
   .small-screen-logo {
     display: none;
@@ -51,10 +76,10 @@
 }
 .topbar-navs {
   padding: 1vw;
-  font-size: max(1.5vw, 20px);
+  font-size: 1rem;
   /* background-color: #07072f; */
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.04);
+  background: #050528;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.4px);
@@ -65,23 +90,24 @@
   position: relative;
 }
 .nav-btn {
-  color: #e4b6a5;
-  text-decoration: none;
-  margin-left: 2vw;
+  color: #eca674;
+  /* text-decoration: none; */
+  margin: 0rem 1.5rem;
   letter-spacing: normal;
-  font-size: smaller;
-  font-weight: 400;
+  font-size: 1rem;
+  position: relative;
+  /* font-weight: 400; */
 }
-.nav-btns a.active {
-  color: #faf9f1;
+/* .nav-btns a.active {
+  color: #faf9f1; 
   text-decoration: underline;
   text-underline-offset: 4px;
-  text-decoration-thickness: 3px;
-}
-.nav-btns :hover {
-  color: #faf9f1;
+  text-decoration-thickness: 3px; 
+} */
+/* .nav-btns :hover {
+  color: #faf9f1; 
   transition: all 0.7s ease-out;
-}
+} */
 
 .nav-toggle {
   position: relative;
@@ -109,11 +135,11 @@
   color: white;
 }
 .moreMenu {
-  color: #e4b6a5;
+  color: #eca674;
   background-color: transparent;
   border: none;
   position: relative;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 @media screen and (max-width: 700px) {
   * {
@@ -132,10 +158,33 @@
     height: 6vw;
     margin: 0;
   }
+  .nav-btn.active::before{
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: -3px;
+  width: 2rem;
+  height: 3px;
+  background-color: #07072f;
+  transition: width .5s ease;
+  transform-origin: bottom right;
+}
+  .nav-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 1rem;
+  height: 3px;
+  background-color: #07072f;
+  transition: width .5s ease;
+  transform-origin: bottom right;
+  }
+  
   .topbar-navs {
     width: 25%;
     min-width: 150px;
-    background-color: transparent;
+    background-color: #050528;
     margin-right: 0;
     padding: 0;
     transition: all 0.75s ease-in-out;
@@ -144,15 +193,15 @@
     right: 0.5rem;
     flex-direction: column;
     align-items: center;
-    font-weight: 450;
+    /* font-weight: 450; */
     border-radius: 2rem;
   }
   .nav-toggle {
-    height: 5vh;
+    height: 5rem;
   }
   .nav-btns {
     width: 100%;
-    border: 0.2rem solid #e4b6a5;
+    border: 0.2rem solid #eca674;
     border-radius: 1rem;
     background-color: #ebc5b7f5;
     display: flex;
@@ -161,7 +210,7 @@
     right: 1vw;
     flex-direction: column;
     padding-left: 0;
-    height: 30vh;
+    /* height: ; */
     padding-top: 0;
     justify-content: space-evenly;
   }
@@ -169,7 +218,8 @@
     color: #07072f;
     font-size: 1rem;
     text-align: center;
-    margin: 0rem 0.8rem;
+    margin: .2rem;
+    position: relative;
   }
   .toggle-btn {
     display: flex;
@@ -181,16 +231,15 @@
   }
   .MuiSvgIcon-root {
     margin: auto;
-    color: #e4b6a5;
+    color: #eca674;
   }
-  .moreMenu{
+  .moreMenu {
     display: none;
   }
-  .responsiveMenuLinks{
+  .responsiveMenuLinks {
     display: block;
   }
-  .expandedMenu{
-  display: none;
+  .expandedMenu {
+    display: none;
   }
 }
-
