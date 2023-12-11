@@ -9,7 +9,7 @@ import {
 } from "@mui/icons-material";
 import Logo from "../assets/iitr_logo.png";
 export default function Topbar() {
-  const [moreMenu, setMoreMenu] = useState(false);
+  // const [moreMenu, setMoreMenu] = useState(false);
   const [eventMenu, setEventMenu] = useState(false);
   const [toggle, setToggle] = useState(false);
   function handleToggle() {

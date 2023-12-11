@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./People.css";
 import Topbar from "../Topbar/Topbar.js";
 import Footer from "../Footer/Footer.js";
@@ -165,7 +165,7 @@ export default function People() {
           <span>Meet our Alums</span>
           <button
           >
-            {displayAlums == false ? (
+            {displayAlums === false ? (
               <KeyboardArrowDown />
             ) : (
               <KeyboardArrowUp />
@@ -173,7 +173,7 @@ export default function People() {
           </button>
         </button>
         <div
-          className={`alums ${displayAlums == false ? "hide" : ""}`}
+          className={`alums ${displayAlums === false ? "hide" : ""}`}
           data-aos="fade-up"
           data-aos-once="false"
           data-aos-easing="ease-in-out"
