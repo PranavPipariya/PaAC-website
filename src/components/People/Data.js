@@ -45,6 +45,14 @@ import mudit from "../assets/members/Mudit Tuteja.JPG";
 
 const Secys = [
   {
+    name: "Shivam Singh Aswal",
+    image: shivam,
+    position: "Secretary",
+    linkedIn: "https://www.linkedin.com/in/shivam-singh-4bb4571a0",
+    email: "mailto:shivam_sa@ph.iitr.ac.in",
+    year: 4,
+  },
+  {
     name: "Ayush Ashray Nishad",
     image: ashray,
     position: "Additional Secretary - Physics",
@@ -61,14 +69,6 @@ const Secys = [
     year: 4,
   },
   {
-    name: "Shivam Singh Aswal",
-    image: shivam,
-    position: "Secretary",
-    linkedIn: "https://www.linkedin.com/in/shivam-singh-4bb4571a0",
-    email: "mailto:shivam_sa@ph.iitr.ac.in",
-    year: 4,
-  },
-  {
     name: "Sudharshan Kannan",
     image: sudharsan,
     position: "Additional Secretary - Maths",
@@ -79,7 +79,7 @@ const Secys = [
   {
     name: "Priyanshu Parakhiya",
     image: parakhiya,
-    position: "Junior Secretary",
+    position: "Joint Secretary",
     linkedIn: "https://www.linkedin.com/in/priyanshu-parakhiya",
     email: "mailto:p_parakhiya@ph.iitr.ac.in",
     year: 3,
