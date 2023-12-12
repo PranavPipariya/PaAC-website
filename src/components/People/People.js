@@ -2,26 +2,15 @@ import React, { useState } from "react";
 import "./People.css";
 import Topbar from "../Topbar/Topbar.js";
 import Footer from "../Footer/Footer.js";
-import { Secy, Head, Member, alums } from "./Data.js";
+import { Secy, Head, Member} from "./Data.js";
 import Card from "./Card.js";
 // import axios from "axios";   for strapi testing
-import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
+// import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 
 export default function People() {
-  const [displayAlums, setDisplayAlums] = useState(false);
-  /* Strapi testing code
-  const [userData, setUserData] = useState([])
-  useEffect(() => {
-    const fetchData = async () => {
-      let fetched_data = await axios
-        .get("http://localhost:1337/api/members")
-      console.log(fetched_data.data.data)
-      setUserData(fetched_data.data.data)
-    }
-    fetchData()
-  }, [])
-  */
-  const [year, setYear] = useState(4);
+  // const [displayAlums, setDisplayAlums] = useState(false);
+
+  const [year, setYear] = useState(2);
   return (
     <div className="about-container">
       <div className="about-topbar">
@@ -86,12 +75,6 @@ export default function People() {
           data-aos-easing="ease-in-out"
         >
           <button
-            className={"members-btn-year " + (year === 1 ? "active-year" : "")}
-            onClick={() => setYear(1)}
-          >
-            1st Y
-          </button>
-          <button
             className={"members-btn-year " + (year === 2 ? "active-year" : "")}
             onClick={() => setYear(2)}
           >
@@ -109,15 +92,14 @@ export default function People() {
           >
             4th Y
           </button>
+          <button
+            className={"members-btn-year " + (year === 5 ? "active-year" : "")}
+            onClick={() => setYear(5)}
+          >
+            5th Y
+          </button>
 
-          {/*  Strapi testing code
-           {
-            userData.map((person) => {
-              return (
-                <img src={person.attributes.Profile_link}/>
-              )
-            })
-          } */}
+
         </div>
         <div
           className="members-members"
@@ -150,7 +132,7 @@ export default function People() {
           <div className="horizontal-line"></div>
         </div>
       </div>
-      <div
+      {/* <div
         className="alum-container"
         data-aos="fade-up"
         data-aos-once="false"
@@ -189,7 +171,7 @@ export default function People() {
             />
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="about-footer">
         <Footer />
       </div>
