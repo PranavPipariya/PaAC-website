@@ -7,7 +7,7 @@ import {
   KeyboardArrowDown,
   KeyboardArrowUp,
 } from "@mui/icons-material";
-import Logo from "../assets/iitr_logo.png";
+import Logo from "../assets/iitr_logo.webp";
 export default function Topbar() {
   // const [moreMenu, setMoreMenu] = useState(false);
   const [eventMenu, setEventMenu] = useState(false);
