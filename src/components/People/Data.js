@@ -47,6 +47,7 @@ const Secys = [
   {
     name: "Shivam Singh Aswal",
     image: shivam,
+    blurhash: "LaJ*YSa#~pt7~pjZRkoeV@j]M{j[",
     position: "Secretary",
     linkedIn: "https://www.linkedin.com/in/shivam-singh-4bb4571a0",
     email: "mailto:shivam_sa@ph.iitr.ac.in",
@@ -54,6 +55,7 @@ const Secys = [
   },
   {
     name: "Ayush Ashray Nishad",
+    blurhash: "LCE.CJLgFg^%=}cExCRP0hVs-4D%",
     image: ashray,
     position: "Additional Secretary - Physics",
     linkedIn: "https://www.linkedin.com/in/ayush-ashray-nishad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -62,6 +64,7 @@ const Secys = [
   },
   {
     name: "Rajnish Kumar Jha",
+    blurhash: "LEB{+D~Vx]Rm.8krx]ju0gIt%2t7",
     image: rajnish,
     position: "Additional Secretary - Astronomy",
     linkedIn: "",
@@ -71,6 +74,7 @@ const Secys = [
   {
     name: "Sudharshan Kannan",
     image: sudharsan,
+    blurhash: "LfH2TOWA%MM{_4M{R+s.xuRjaet7",
     position: "Additional Secretary - Maths",
     linkedIn: "https://www.linkedin.com/in/sudharshan-k-30a3431b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:k_s@ph.iitr.ac.in",
@@ -78,6 +82,7 @@ const Secys = [
   },
   {
     name: "Priyanshu Parakhiya",
+    blurhash: "LIC%pfW,9pxv4mj^-tWC%5aQRhoy",
     image: parakhiya,
     position: "Joint Secretary",
     linkedIn: "https://www.linkedin.com/in/priyanshu-parakhiya",
@@ -86,6 +91,7 @@ const Secys = [
   },
   {
     name: "Roopa Pramodan",
+    blurhash: "LPHUtU?cLHxDGw-=voNF?btSk8M{",
     image: roopa,
     position: "Joint Secretary",
     linkedIn: "https://www.linkedin.com/in/roopa-pramodan-117862229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -97,6 +103,7 @@ const Secys = [
 const Heads = [
   {
     name: "Anand Bondge",
+    blurhash: "L6Cs~G%w0cM_9:aL^-oi06oyzVRP",
     image: bondge,
     position: "Design Head",
     linkedIn: "https://www.linkedin.com/in/anandbondge",
@@ -105,6 +112,7 @@ const Heads = [
   },
   {
     name: " Jeevika",
+    blurhash: "LAHw=A,n6TIU5u=^?a?F_LX8MeIV",
     image: gjeevika,
     position: "Web Development Head",
     linkedIn: "https://www.linkedin.com/in/jeevika-g/",
@@ -113,6 +121,7 @@ const Heads = [
   },
   {
     name: "Suraj",
+    blurhash: "LHDlyUR400b_00o}~pi^oft7r=bH",
     image: suraj,
     position: "Astrophotography Head",
     linkedIn: "https://www.linkedin.com/in/suraj-364a18223/",
@@ -121,6 +130,7 @@ const Heads = [
   },
   {
     name: "Vansh Uppal",
+    blurhash: "L7C?v28{_N01?F8_-n9G_ND%?vIU",
     image: "",
     position: "Marketing Head",
     linkedIn: "",
@@ -132,6 +142,7 @@ const Heads = [
 const Members = [
   {
     name: "Agrima Darshan",
+    blurhash:"LXINmS~TNHjF=_t5E2M|-nbboeRk",
     image: agrima,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/agrima-darshan",
@@ -141,6 +152,7 @@ const Members = [
   {
     name: "Uddipt Gupta",
     image: uddipt,
+    blurhash: "LcFYiWIU$|fl~VRit7oexYWBt8WB",
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/uddipt-gupta-68b114267/",
     email: "mailto:uddipt_g@ma.iitr.ac.in",
@@ -148,6 +160,7 @@ const Members = [
   },
   {
     name: "Malladi Vskcs Sisir Chandrachud",
+    blurhash: "LjDTI$WARjj[?wj[axfQxukCf6ay",
     image: sisir,
     position: "Member",
     linkedIn: "www.linkedin.com/in/v-sisir-chandrachud-malladi-287a16216",
@@ -156,6 +169,7 @@ const Members = [
   },
   {
     name: "Abhijith Reddy Dasari",
+    blurhash: "L5By8N1JAzD,00McI,E0+i?J}[yD",
     image: abhijeet,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/abhijith-reddy-dasari-6617b6213/",
@@ -164,6 +178,7 @@ const Members = [
   },
   {
     name: "Aastha Kapoor",
+    blurhash: "L7Hnm0Xw1E8~00JCIps+~p+j#tW,",
     image: AASTHA,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/aastha-kapoor-122352231",
@@ -173,6 +188,7 @@ const Members = [
   {
     name: "Sumit Kumar",
     image: sumit,
+    blurhash: "LyL}jXog_Mxu?Zj?M}kDfkj[WBay",
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/shadowpii/",
     email: "mailto:sumit_k@es.iitr.ac.in",
@@ -180,6 +196,7 @@ const Members = [
   },
   {
     name: "Kriti",
+    blurhash: "LTKd;$00.AxuNiM_$}%Mt5oMR%b0",
     image: kriti,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/kriti24/",
@@ -188,6 +205,7 @@ const Members = [
   },
   {
     name: "Aman Ghadge",
+    blurhash: "LiHo8zRj-;fQ~qtQRkt7xtjuV@ae",
     image: aman,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/aman-ghadge-5b4252210",
@@ -196,6 +214,7 @@ const Members = [
   },
   {
     name: "Ahmed Rockey Saikia",
+    blurhash:"LSFs43t7o{ax9sW9WYkC%jWCnjo0",
     image: rocky,
     position: "Member",
     linkedIn: "http://linkedin.com/in/ahmed-rockey-saikia-333113180",
@@ -204,6 +223,7 @@ const Members = [
   },
   {
     name: "Pranay Gupta",
+    blurhash: "LOD+De0f-.Im?1NfRgtQI]jroHxu",
     image: pranay,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/pranaygupta26/",
@@ -212,6 +232,7 @@ const Members = [
   },
   {
     name: "Aishwarya Ahuja",
+    blurhash: "LCH^z|R%-3X.?u4:ibEN01~BXU-9",
     image: aishwarya,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/aishwarya-ahuja-4a3126234",
@@ -220,6 +241,7 @@ const Members = [
   },
   {
     name: "Adith V R",
+    blurhash: "LkJlNpRlr=t7u6NdkXR*TfS3NHjs",
     image: adithv,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/adith-v-r/",
@@ -228,6 +250,7 @@ const Members = [
   },
   {
     name: "B Chakravarthy ",
+    blurhash: "LkR3A,j[_Nj@Diay-;kBkqaya0kC",
     image: chakrab,
     position: "Member",
     linkedIn: "",
@@ -237,6 +260,7 @@ const Members = [
   {
     name: "Shivank Garg",
     image: shivank,
+    blurhash:"LEGlL;O^%zx^1A.9x|SQY8XV4nIp",
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/shivank-garg21/",
     email: "mailto:shivank_g@mfs.iitr.ac.in",
@@ -244,6 +268,7 @@ const Members = [
   },
   {
     name: "Pranav",
+    blurhash: "LGDIacRQ~9-U0$?G58R-%KtQ={jF",
     image: pranav,
     position: "Member",
     linkedIn: "",
@@ -252,6 +277,7 @@ const Members = [
   },
   {
     name: "Vaibhav",
+    blurhash: "LLEM8wx]-o%M~pRjWVaeoJV@M|ay",
     image: VAIBHAV,
     position: "Member",
     linkedIn: "",
@@ -260,6 +286,7 @@ const Members = [
   },
   {
     name: "Yug Maheshwari ",
+    blurhash: "LFGv36Mw~B?G#6EM%$Md8_IUMxRj",
     image: YUG,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/yug-maheshwari-37b432251?original_referer=https%3A%2F%2Fwww%2Egoogle%2Eco%2Ein%2F&originalSubdomain=in",
@@ -268,6 +295,7 @@ const Members = [
   },
   {
     name: "Khushi",
+    blurhash: "LzNc]8jF_NS4_3ayt7t7IpWVR5jY",
     image: khushii,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/khushi-arichwal-702168295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -276,6 +304,7 @@ const Members = [
   },
   {
     name: "Shaun Budarpur",
+    blurhash: "LEDbD,S50:og1PxYI@Nd0MI;}kxC",
     image: SHAUN,
     position: "Member",
     linkedIn: " https://www.linkedin.com/in/shaun-budarpur-98755b213",
@@ -284,6 +313,7 @@ const Members = [
   },
   {
     name: "Tsewang Khasphel ",
+    blurhash: "LmHoUfxtxuWB?wRkfRj[j]oeRit7",
     image: TSEWANG,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/tsewang-khasphel-677a98252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -292,6 +322,7 @@ const Members = [
   },
   {
     name: "B DHANA SRI SHANMUKHINI ",
+    blurhash: "LFLMFj002|#Z0[H;^I%N85M-mU%{",
     image: shan,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/dhanasri-shanmukhini-998954261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -300,6 +331,7 @@ const Members = [
   },
   {
     name: "Kothadiya Jeelben Balkrushna",
+    blurhash: "LXG8QF9Ykpn$?^IUjZWB$+t7RjkC",
     image: kothadia,
     position: "Member",
     linkedIn: "www.linkedin.com/in/jeel-kothadiya-714278234",
@@ -308,6 +340,7 @@ const Members = [
   },
   {
     name: "Sumedh Gosavi ",
+    blurhash: "L5Du}J8{ID4V?c~9S%M_?bV]I:4:",
     image: sumedh,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/sumedh-gosavi-1b5311246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -316,6 +349,7 @@ const Members = [
   },
   {
     name: "Raghav Garg ",
+    blurhash: "L9ECwI4;C$^*0c$zrF9a.kNY^Nox",
     image: raghav,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/raghav-garg-307467251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -324,6 +358,7 @@ const Members = [
   },
   {
     name: "Aryan Singh Chaudhry",
+    blurhash: "LSE{wp%Mt,Rk_4jboMoe.Tt7xHt6",
     image: aryan,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/aryan-singh-chaudhry-155963255/",
@@ -332,6 +367,7 @@ const Members = [
   },
   {
     name: "Prajwal Sastry",
+    blurhash: "LSHKk9WVE2oL.moLk9R+~qayV@s.",
     image: prajwal,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/prajwal-sastry-1a29b2268/",
@@ -340,6 +376,7 @@ const Members = [
   },
   {
     name: "Vikrant Singh",
+    blurhash: "L8B{os_10Lx]00ae}?nh02IV=}NI",
     image: vikrant,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/vikrant-singh-234894242/",
@@ -348,6 +385,7 @@ const Members = [
   },
   {
     name: "Sireesha Teegala",
+    blurhash: "L7Iqu$00~Tae1MIm4;?a%M_2E89a",
     image: sireesha,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/sireesha-teegala-08b7452a4",
@@ -356,6 +394,7 @@ const Members = [
   },
   {
     name: "Mudit Tuteja ",
+    blurhash: "LsH.NUIU-;WA~qWCt7j[ozt7V@WV",
     image: mudit,
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/mudit-tuteja-25054b253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
