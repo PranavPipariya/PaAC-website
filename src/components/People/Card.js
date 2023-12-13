@@ -1,6 +1,5 @@
 import { Email, LinkedIn } from "@mui/icons-material";
 import Logo from "../assets/iitr_logo.webp";
-import Logo from "../assets/iitr_logo.png";
 import React, {useState, useEffect} from "react";
 import "./People.css";
 import AOS from 'aos';
