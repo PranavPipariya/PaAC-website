@@ -17,7 +17,7 @@ export default function Home() {
   }, []);
   AOS.init({ duration: 1000 });
   return (
-    <>
+    <div>
       <div className="logo-div">
         <Logo></Logo>
       </div>
@@ -99,7 +99,7 @@ export default function Home() {
             <div className="home-events-heading-container">
               <NavLink to="/events" className="home-events-link">
                 <h1 className="home-events-heading">
-                  Exploring the Cosmos: Engaging Events conducted by PaAC
+                  Upcoming Events
                 </h1>
               </NavLink>
             </div>
@@ -112,6 +112,7 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-    </>
+      
+    </div>
   );
 }
