@@ -32,6 +32,7 @@ export default function People() {
               position={value.position}
               linkedIn={value.linkedIn}
               email={value.email}
+              blurhash={value.blurhash}
             />
           ))}
         </div>
@@ -57,6 +58,7 @@ export default function People() {
               position={value.position}
               linkedIn={value.linkedIn}
               email={value.email}
+              blurhash={value.blurhash}
             />
           ))}
         </div>
@@ -98,8 +100,6 @@ export default function People() {
           >
             5th Y
           </button>
-
-
         </div>
         <div
           className="members-members"
@@ -117,6 +117,7 @@ export default function People() {
                   position={value.position}
                   linkedIn={value.linkedIn}
                   email={value.email}
+                  blurhash={value.blurhash}
                 />
               );
             }

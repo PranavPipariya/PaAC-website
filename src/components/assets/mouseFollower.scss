@@ -56,7 +56,6 @@ $mf-color-text:#07072f !default;
     &.-text {
         &:before {
             transform:scale(1.5);
-            font-family: "Outfit";
             color: $mf-color-text;
             background-color: #e4b6a5a7;
             border: #e4b6a5 2px solid;

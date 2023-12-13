@@ -43,7 +43,6 @@
 }
 .mf-cursor.-text:before {
   transform: scale(1.5);
-  font-family: "Outfit";
   color: #07072f;
   background-color: rgba(228, 182, 165, 0.6549019608);
   border: #e4b6a5 2px solid;

@@ -30,15 +30,10 @@ export default function Home() {
             src={Ellipse}
             className="ellipse"
             alt=""
-            data-aos="fade-right"
-            data-aos-once="false"
-            data-aos-easing="ease-in-out"
+            rel="preload" fetchpriority="high"
           ></img>
           <div
             className="home-title"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-            data-aos-once="false"
           >
             <h1 className="club">PHYSICS AND ASTRONOMY CLUB</h1>
             <h3 className="iitr">IIT ROORKEE</h3>
@@ -47,9 +42,7 @@ export default function Home() {
             src={Planet}
             className="planet"
             alt=""
-            data-aos="fade-left"
-            data-aos-once="false"
-            data-aos-easing="ease-in-out"
+            rel="preload" fetchpriority="high"
           ></img>
         </div>
         <div className="home-body">

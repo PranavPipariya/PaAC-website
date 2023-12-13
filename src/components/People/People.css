@@ -105,11 +105,14 @@
     width: max(20vw, 140px);
     margin: 0 1rem;
 }
-.card-image{
+.card-image, .blur-image {
+    width: 14vw !important;
+    height: 14vw !important;
     border-radius: 50%;
-    width: 14vw;
-    height: 14vw;
     object-fit: cover;
+}
+.blur-image > canvas {
+    border-radius: 50%;
 }
 .card-name{
     font-size: max(1.25vw,12px);
@@ -183,6 +186,11 @@ a{
     .card-image{
         width: 20vw;
         height: 20vw;
+    }
+    .blur-image {
+        display: block;
+        width: 20vw !important;
+        height: 20vw !important;
     }
     .card-name{
         margin-bottom: 0;
