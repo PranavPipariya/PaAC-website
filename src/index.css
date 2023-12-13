@@ -12,6 +12,7 @@ body {
 }
 h1 {
   font-family: "Paytone One", sans-serif;
+  font-display: swap;
 }
 h2,
 h3,
@@ -20,15 +21,12 @@ h5,
 h6,
 p {
   font-family: "Josefin Sans", sans-serif;
+  font-display: swap;
 }
 
 ::selection {
   background-color: #faddff;
   color: #07072f;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 body::-webkit-scrollbar {

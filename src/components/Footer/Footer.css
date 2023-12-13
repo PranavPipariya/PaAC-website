@@ -46,6 +46,7 @@
     align-items: center;
     font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
+    font-display: swap;
 }
 .footer-socials a{
     display: flex;
