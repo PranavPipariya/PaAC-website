@@ -1,8 +1,8 @@
-import telescope from "../assets/Home_Events/telescope.png"
-import paac_x_qcg from "../assets/Home_Events/paax_x_qcg.png"
-import integration_bee from "../assets/Home_Events/integration_bee.png"
-import cosmic_voyage from "../assets/Home_Events/cosmic_voyage.png"
-import astrophotog from "../assets/Home_Events/astrophotog.png"
+import telescope from "../assets/Home_Events/telescope.webp"
+import paac_x_qcg from "../assets/Home_Events/paax_x_qcg.webp"
+import integration_bee from "../assets/Home_Events/integration_bee.webp"
+import cosmic_voyage from "../assets/Home_Events/cosmic_voyage.webp"
+import astrophotog from "../assets/Home_Events/astrophotog.webp"
 
 export const home_events = [
     {
