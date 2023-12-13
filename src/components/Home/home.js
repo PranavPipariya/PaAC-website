@@ -30,8 +30,6 @@ export default function Home() {
             src={Ellipse}
             className="ellipse"
             alt=""
-            width="30vw"
-            height="30vw"
           ></img>
           <div
             className="home-title"

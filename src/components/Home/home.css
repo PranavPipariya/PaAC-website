@@ -43,8 +43,7 @@
 .ellipse {
   position: absolute;
   margin-left: 0;
-  width: 30vw;
-  height: 30vw;
+  width: 38vw;
 }
 .home-title {
   display: flex;
@@ -68,9 +67,9 @@
 }
 .planet {
   position: absolute;
-  top: 20vh;
+  top: 40vh;
   right: 0;
-  height: 50vw;
+  height: 40vw;
 }
 .know-paac-container {
   width: 90%;
