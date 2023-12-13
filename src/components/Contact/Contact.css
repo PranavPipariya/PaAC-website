@@ -94,7 +94,7 @@ textarea {
   background-color: white;
   margin-bottom: 5vh;
   color: black;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   border-radius: 6px;
   outline: none;
 }
@@ -107,7 +107,7 @@ input {
   margin-bottom: 5vh;
   color: black;
   border-radius: 6px;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   outline: none;
 }
 
@@ -126,7 +126,7 @@ input {
   font-size: max(1.3vw, 10px);
   color: black;
   font-weight: 500;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   transition: all 0.3s ease-in-out;
 }
 .form-submit-btn:hover {
