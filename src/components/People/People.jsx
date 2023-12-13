@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./People.css";
-import Topbar from "../Topbar/Topbar.js";
-import Footer from "../Footer/Footer.js";
+import Topbar from "../Topbar/Topbar";
+import Footer from "../Footer/Footer";
 import { Secy, Head, Member} from "./Data.js";
-import Card from "./Card.js";
+import Card from "./Card";
 // import axios from "axios";   for strapi testing
 // import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 
