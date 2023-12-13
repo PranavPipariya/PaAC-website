@@ -30,7 +30,6 @@ export default function Home() {
             src={Ellipse}
             className="ellipse"
             alt=""
-            rel="preload" fetchpriority="high"
             width="30vw"
             height="30vw"
           ></img>
@@ -44,7 +43,6 @@ export default function Home() {
             src={Planet}
             className="planet"
             alt=""
-            rel="preload" fetchpriority="high"
             height="50vw"
           ></img>
         </div>
