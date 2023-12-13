@@ -2,6 +2,8 @@
     display:flex;
     flex-direction:column;
     align-items:center;
+    background-image: url("../assets/Frame\ 96.png");
+    background-position: center;
 }
 .events-topbar{
     position: relative;

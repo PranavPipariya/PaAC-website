@@ -34,8 +34,8 @@ export default function Home() {
           <div
             className="home-title"
           >
-            <h1 className="club">PHYSICS AND ASTRONOMY CLUB</h1>
-            <h3 className="iitr">IIT ROORKEE</h3>
+           <h1 className="club">Physics and Astronomy Club</h1>
+            <h3 className="iitr">Indian Institute of Technology Roorkee </h3>
           </div>
           <img
             src={Planet}

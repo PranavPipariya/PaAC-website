@@ -9,6 +9,8 @@
   margin: 0;
   width: 100%;
   box-sizing: border-box;
+  background-image: url("../assets/Frame\ 96.png");
+  background-position: center;
   /* overflow: hidden; */
 }
 .logo-div {
@@ -60,10 +62,12 @@
   margin-bottom: 0.5vh;
   font-size: 4vw;
   font-weight: 500;
+  color: #ECA674;
 }
 .iitr {
   font-size: 2vw;
-  font-weight: 200;
+  font-weight: 400;
+  color: white;
 }
 .planet {
   position: absolute;
