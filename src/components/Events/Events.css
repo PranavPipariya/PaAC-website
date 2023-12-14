@@ -28,6 +28,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 100%;
 }
 .EventCard-container {
   background-color: #2c2b6cb8;
