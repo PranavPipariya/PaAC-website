@@ -42,9 +42,6 @@ export default function Home() {
           <div className="know-paac-container">
             <div
               className="paac-desc"
-              data-aos="fade-up"
-              data-aos-once="false"
-              data-aos-easing="ease-in-out"
             >
               <NavLink to="/about-us">
                 <h1 className="know-header">What do we do at PaAC?</h1>
@@ -66,9 +63,6 @@ export default function Home() {
             </div>
             <div
               className="paac-gp"
-              data-aos="fade-up"
-              data-aos-once="false"
-              data-aos-easing="ease-in-out"
             >
               Group Photo
               <img src="" alt=""></img>
@@ -76,9 +70,6 @@ export default function Home() {
           </div>
           <div
             className="home-achievement"
-            data-aos="fade-up"
-            data-aos-once="false"
-            data-aos-easing="ease-in-out"
           >
             <Achievement />
           </div>
@@ -86,9 +77,6 @@ export default function Home() {
           {/* ---------Home Events------------ */}
           <div
             className="home-events-section"
-            data-aos="fade-up"
-            data-aos-once="false"
-            data-aos-easing="ease-in-out"
           >
             <div className="home-events-heading-container">
               <NavLink to="/events" className="home-events-link">
