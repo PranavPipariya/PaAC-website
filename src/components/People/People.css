@@ -54,6 +54,7 @@
 }
 .members-btn-year:hover{
     background-color: white;
+    cursor: pointer;
 }
 .members-members, .alums{
     padding: 2vw;

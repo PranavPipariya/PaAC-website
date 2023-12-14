@@ -23,21 +23,13 @@
   position: relative;
   top: 5px;
 }
-.expandedMenu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  right: -1rem;
-  top: max(3rem, 3.5vw);
-  background-color: #050528;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  font-size: 1rem;
-}
+
 .expandedNavLinks {
   /* font-size: larger; */
   margin: .5rem auto !important;
+}
+.nav-btns{
+  position: relative;
 }
 /* a.expandedNavLinks.active {
   color: #faf9f1;
@@ -52,6 +44,7 @@
   bottom: -3px;
   width: 40%;
   height: 3px;
+  border-radius: 5px;
   background-color: #eca674;
   transition: all 1s ease-out;
   transform-origin: bottom right;
@@ -61,15 +54,40 @@
   position: absolute;
   left: min(20%, 1rem);
   bottom: -5px;
+  border-radius: 5px;
   width: 55%;
   height: 3px;
   background-color: #eca674;
   transition: width .5s ease;
   transform-origin: bottom right;
 }
+.expandedMenu {
+  display: none;
+}
+.moreMenu:hover{
+  cursor: pointer;
+}
+.moreMenu:hover + .expandedMenu, .expandedMenu:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 12rem;
+  top: max(1rem, 1.4vw);
+  background-color: #050528;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+
+}
 @media screen and (min-width: 760px) {
   .small-screen-logo {
     display: none;
+  }
+}
+@media screen and (min-width: 701px) {
+  .nav-btns {
+    display: block !important;
   }
 }
 .topbar-top a.active {
@@ -142,6 +160,7 @@
   position: relative;
   /* font-weight: 600; */
 }
+
 @media screen and (max-width: 700px) {
   * {
     box-sizing: border-box;
@@ -164,6 +183,7 @@
   position: absolute;
   left: 40%;
   bottom: -3px;
+    /* text-align: center; */
   width: 2rem;
   height: 3px;
   background-color: #07072f;
@@ -236,6 +256,9 @@
     color: #eca674;
   }
   .moreMenu {
+    display: none;
+  }
+  .expandedMenu {
     display: none;
   }
   .responsiveMenuLinks {
