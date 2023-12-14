@@ -9,7 +9,7 @@
   margin: 0;
   width: 100%;
   box-sizing: border-box;
-  background-image: url("../assets/Frame\ 96.png");
+  background-image: url("/Frame_96.png");
   background-position: center;
   /* overflow: hidden; */
 }
@@ -283,7 +283,7 @@
   .home-container {
     box-sizing: border-box;
     width: 100vw;
-    background: "../assets/gallery/image 1";
+    background: url("../assets/gallery/image 1");
   }
   .home-.home-container {
     margin-top: 0;
