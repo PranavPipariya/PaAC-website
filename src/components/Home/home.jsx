@@ -1,21 +1,15 @@
-import React, { useEffect } from "react";
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 import "./home.css";
 import Ellipse from "../assets/Primary.png";
 import Planet from "../assets/Planet.png";
 import { NavLink } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Achievement from "../Achievement/Achievement";
 import HomeEvents from "./HomeEvents";
 import Logo from "./Logo";
 
 export default function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  AOS.init({ duration: 1000 });
+
   return (
     <div>
       <div className="logo-div">
@@ -48,14 +42,11 @@ export default function Home() {
           <div className="know-paac-container">
             <div
               className="paac-desc"
-              data-aos="fade-up"
-              data-aos-once="false"
-              data-aos-easing="ease-in-out"
             >
               <NavLink to="/about-us">
                 <h1 className="know-header">What do we do at PaAC?</h1>
               </NavLink>
-              {/* <p className="know-body">
+              <p className="know-body">
               Formerly known as the Star-gazing section, our group directly
               operates under the Student Technical Council of IITR and Office of
               Dean-sponsored research and industrial consultancy. The group is a
@@ -68,23 +59,16 @@ export default function Home() {
               club frequently engages in research paper discussions and also in
               open informal group discussions on various mathematical and
               physical science topics.
-            </p> */}
+            </p>
             </div>
             <div
               className="paac-gp"
-              data-aos="fade-up"
-              data-aos-once="false"
-              data-aos-easing="ease-in-out"
             >
-              Group Photo
-              <img src="" alt=""></img>
+              <img src="src/components/assets/gallery/paac.jpg" alt=""></img>
             </div>
           </div>
           <div
             className="home-achievement"
-            data-aos="fade-up"
-            data-aos-once="false"
-            data-aos-easing="ease-in-out"
           >
             <Achievement />
           </div>
@@ -92,14 +76,11 @@ export default function Home() {
           {/* ---------Home Events------------ */}
           <div
             className="home-events-section"
-            data-aos="fade-up"
-            data-aos-once="false"
-            data-aos-easing="ease-in-out"
           >
             <div className="home-events-heading-container">
               <NavLink to="/events" className="home-events-link">
                 <h1 className="home-events-heading">
-                  Upcoming Events
+                  Exploring the Cosmos: Engaging events conducted by PaAC
                 </h1>
               </NavLink>
             </div>

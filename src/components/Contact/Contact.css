@@ -21,7 +21,7 @@
   justify-content: flex-start;
 }
 /* .contact-desc-title {
-  color: #e4b6a5;
+  color: #eca674;
   font-size: max(3vw, 15px);
   margin-bottom: 0;
 } */
@@ -43,7 +43,7 @@
 }
 .visit-title,
 .chat-title {
-  color: #e4b6a5;
+  color: #eca674;
   font-size: max(3vw, 15px);
   margin-bottom: .5rem;
   text-align: center;
@@ -83,7 +83,7 @@
 label {
   font-size: max(1.5vw, 13px);
   margin-bottom: 1.25vh;
-  color: #e4b6a5;
+  color: #eca674;
   font-weight: 400;
 }
 textarea {
@@ -130,7 +130,7 @@ input {
   transition: all 0.3s ease-in-out;
 }
 .form-submit-btn:hover {
-  background-color: #e4b6a5;
+  background-color: #eca674;
 }
 
 @media screen and (max-width: 700px) {

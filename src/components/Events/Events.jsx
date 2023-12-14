@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import "./Events.css";
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
-import {Upcoming, Recent} from "./EventsData.js"
+import {Recent} from "./EventsData.js"
 import EventCard from "./EventCard";
-
+import UpcomingEventCard from "./UpcomingEventCard";
 export default function Events(){
     useEffect(() => {
         window.scrollTo(0,0);
@@ -15,13 +15,14 @@ export default function Events(){
                 <Topbar />
             </div>
             <h1 className="events-heading-title">Upcoming Events</h1>
-                <EventCard 
+            <UpcomingEventCard/>
+                {/* <EventCard 
                 key={Upcoming.id}
                 title = {Upcoming.title}
                 date = {Upcoming.date}
                 location = {Upcoming.location}
                 details = {Upcoming.details}
-                /> 
+                />  */}
             <h1 className="events-heading-title">Previous Events</h1>
             <div className="events-recent" >
                 {Recent.map((data) => (

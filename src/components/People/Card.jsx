@@ -1,9 +1,7 @@
 import { Email, LinkedIn } from "@mui/icons-material";
 import Logo from "../assets/iitr_logo.webp";
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import "./People.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Blurhash } from "react-blurhash";
 
 export default function Card(props) {
@@ -17,9 +15,8 @@ export default function Card(props) {
     }
     }, [props.img])
     
-    AOS.init({duration : 1000})
     return(
-        <div className="card-container" data-aos="fade-up" data-aos-once="false" data-aos-easing="ease-in-out">
+        <div className="card-container">
                 {
                     (!imageLoaded) && props.img !== '' ? <Blurhash className="blur-image" hash={props.blurhash} punch={1}/> : <img className="card-image" loading="lazy" src={props.img || Logo} alt=""></img>
                 }

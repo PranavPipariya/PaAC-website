@@ -1,9 +1,8 @@
-import React, { useReducer, useRef } from "react";
+import { useReducer, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import Topbar from "../Topbar/Topbar";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import {
   Instagram,
   LinkedIn,
@@ -13,7 +12,6 @@ import {
 } from "@mui/icons-material";
 
 export default function Contact() {
-  AOS.init({ duration: 1000 });
   const form = useRef();
   const resetForm = () => {
     dispatch({ type: "Reset" });
@@ -66,9 +64,7 @@ export default function Contact() {
       </div>
       <div
         className="contact-us-container"
-        data-aos="fade-up"
-        data-aos-once="false"
-        data-aos-easing="ease-in-out"
+       
       >
         <div className="contact-desc">
           <div className="contact-us">

@@ -19,11 +19,10 @@
     animation-play-state: paused;
 }
 .text {
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 3px;
 }
 #rotatingText {
-    font-family: "Paytone One", sans-serif;
     animation-name: rotate-circle;
     animation-duration: 10s;
     animation-timing-function: linear;

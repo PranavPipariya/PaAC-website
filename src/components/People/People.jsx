@@ -20,9 +20,6 @@ export default function People() {
       <div className="members">
         <div
           className="members-secys"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
         >
           {Secy.map((value) => (
             <Card
@@ -38,17 +35,11 @@ export default function People() {
         </div>
         <div
           className="line-container"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
         >
           <div className="horizontal-line"></div>
         </div>
         <div
           className="members-heads"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
         >
           {Head.map((value) => (
             <Card
@@ -64,17 +55,11 @@ export default function People() {
         </div>
         <div
           className="line-container"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
         >
           <div className="horizontal-line"></div>
         </div>
         <div
           className="members-btn"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
         >
           <button
             className={"members-btn-year " + (year === 2 ? "active-year" : "")}
@@ -103,9 +88,6 @@ export default function People() {
         </div>
         <div
           className="members-members"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
         >
           {Member.map((value) => {
             if (value.year === year) {
@@ -126,18 +108,12 @@ export default function People() {
         </div>
         <div
           className="line-container"
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
         >
           <div className="horizontal-line"></div>
         </div>
       </div>
       {/* <div
         className="alum-container"
-        data-aos="fade-up"
-        data-aos-once="false"
-        data-aos-easing="ease-in-out"
       >
         <button
           className="alum-btn"
@@ -157,9 +133,7 @@ export default function People() {
         </button>
         <div
           className={`alums ${displayAlums === false ? "hide" : ""}`}
-          data-aos="fade-up"
-          data-aos-once="false"
-          data-aos-easing="ease-in-out"
+         
         >
           {alums.map((value) => (
             <Card
