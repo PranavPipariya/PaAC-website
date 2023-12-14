@@ -46,7 +46,7 @@ export default function Home() {
               <NavLink to="/about-us">
                 <h1 className="know-header">What do we do at PaAC?</h1>
               </NavLink>
-              {/* <p className="know-body">
+              <p className="know-body">
               Formerly known as the Star-gazing section, our group directly
               operates under the Student Technical Council of IITR and Office of
               Dean-sponsored research and industrial consultancy. The group is a
@@ -59,13 +59,12 @@ export default function Home() {
               club frequently engages in research paper discussions and also in
               open informal group discussions on various mathematical and
               physical science topics.
-            </p> */}
+            </p>
             </div>
             <div
               className="paac-gp"
             >
-              Group Photo
-              <img src="" alt=""></img>
+              <img src="src/components/assets/gallery/paac.jpg" alt=""></img>
             </div>
           </div>
           <div
