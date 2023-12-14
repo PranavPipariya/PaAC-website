@@ -29,7 +29,7 @@
 }
 .footer-headings{
     font-size: max(2vw,13px);
-    color: #E4B6A5;
+    color: #eca674;
     font-weight: 500;
 }
 .footer-body{
@@ -60,7 +60,7 @@
 .socials-icon{
     margin-right: 0.7vw;
     font-size: max(1.7vw,13px);
-    color: #E4B6A5;
+    color: #eca674;
 }
 
 @media screen and (max-width:700px) {

@@ -1,21 +1,15 @@
-import React, { useEffect } from "react";
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 import "./home.css";
 import Ellipse from "../assets/Primary.png";
 import Planet from "../assets/Planet.png";
 import { NavLink } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Achievement from "../Achievement/Achievement";
 import HomeEvents from "./HomeEvents";
 import Logo from "./Logo";
 
 export default function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  AOS.init({ duration: 1000 });
+
   return (
     <div>
       <div className="logo-div">
@@ -99,7 +93,7 @@ export default function Home() {
             <div className="home-events-heading-container">
               <NavLink to="/events" className="home-events-link">
                 <h1 className="home-events-heading">
-                  Upcoming Events
+                  Exploring the Cosmos: Engaging events conducted by PaAC
                 </h1>
               </NavLink>
             </div>
