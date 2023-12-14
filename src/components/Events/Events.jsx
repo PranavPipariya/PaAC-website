@@ -8,7 +8,7 @@ import EventCard from "./EventCard";
 export default function Events(){
     useEffect(() => {
         window.scrollTo(0,0);
-    }, []);
+    }, []); 
     return(
         <div className="events-container">
             <div className="events-topbar">
@@ -21,7 +21,7 @@ export default function Events(){
                 date = {Upcoming.date}
                 location = {Upcoming.location}
                 details = {Upcoming.details}
-                />
+                /> 
             <h1 className="events-heading-title">Previous Events</h1>
             <div className="events-recent" >
                 {Recent.map((data) => (

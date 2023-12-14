@@ -79,6 +79,9 @@ export default function Topbar() {
                 <NavLink to="/library" className="nav-btn expandedNavLinks">
                   Library
                 </NavLink>
+                <NavLink to="/Events" className="nav-btn expandedNavLinks">
+                  Recent Events
+                </NavLink>
                 <NavLink
                   to="/open-projects"
                   className="nav-btn expandedNavLinks"
