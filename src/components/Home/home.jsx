@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import Achievement from "../Achievement/Achievement";
 import HomeEvents from "./HomeEvents";
 import Logo from "./Logo";
+import Newsletter from "./Newsletter";
 
 export default function Home() {
 
@@ -39,6 +40,9 @@ export default function Home() {
           ></img>
         </div>
         <div className="home-body">
+          <div className="newsletter-container">
+            <Newsletter/>
+          </div>
           <div className="know-paac-container">
             <div
               className="paac-desc"
