@@ -31,7 +31,7 @@
 }
 .contact-form {
   border-radius: 1.5rem;
-  background-color: #ffffff30;
+  background-color: #2d3787b4;
   width: max(35%, 300px);
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@
 .chat-qr{
     height: max(150px, 15vw);
     width: max(150px, 20vw);
-    background-color: #2d3887;
+    background-color: #2c2b6c9d;
     margin: auto;
 }
 .location{
@@ -77,7 +77,8 @@
 }
 
 .social-media-handle{
-    margin: 0 .3rem;
+    margin: 0.3rem;
+    color: #eca674;
 }
 
 label {
@@ -91,7 +92,6 @@ textarea {
   padding: 0.6rem;
   font-size: max(1vw, 10px);
   height: 17vh;
-  background-color: white;
   margin-bottom: 5vh;
   color: black;
   font-family: 'Josefin Sans', sans-serif;
@@ -103,7 +103,6 @@ input {
   padding: 0.6rem;
   font-size: max(1vw, 10px);
   height: 6vh;
-  background-color: white;
   margin-bottom: 5vh;
   color: black;
   border-radius: 6px;
@@ -117,20 +116,21 @@ input {
   justify-content: center;
 }
 .form-submit-btn {
-  border: none;
+  background-color: #eca674;
+  border: 3px solid #eca674;
   border-radius: 5px;
-  background-color: white;
-  padding: 0.5vw;
-  padding-left: 1.25vw;
-  padding-right: 1.25vw;
-  font-size: max(1.3vw, 10px);
   color: black;
-  font-weight: 500;
-  font-family: 'Josefin Sans', sans-serif;
-  transition: all 0.3s ease-in-out;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 .form-submit-btn:hover {
-  background-color: #eca674;
+  background-color: #2c2b6c9d;
+  color: #eca674;
+  border: 3px solid #eca674;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 700px) {

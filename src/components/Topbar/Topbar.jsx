@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Topbar.css";
-import {
-  Close,
-  DensityMedium,
-} from "@mui/icons-material";
+import { Close, DensityMedium } from "@mui/icons-material";
 import Logo from "../assets/iitr_logo.webp";
 export default function Topbar() {
   // const [moreMenu, setMoreMenu] = useState(false);
@@ -77,8 +74,6 @@ export default function Topbar() {
             Our Work
           </button>
 
-          {/* {eventMenu ? <KeyboardArrowUp /> : <KeyboardArrowDown />} */}
-
           <div className="expandedMenu">
             <NavLink
               to="/library"
@@ -116,15 +111,20 @@ export default function Topbar() {
           >
             Gallery
           </NavLink>
-          {/* <NavLink to="/contact-us" className="nav-btn">
-            Contact us
-          </NavLink> */}
+
           <NavLink
             to="/inventory"
             className="nav-btn"
             onClick={() => setToggle(false)}
           >
             Inventory
+          </NavLink>
+          <NavLink
+            to="/contact-us"
+            className="nav-btn"
+            onClick={() => setToggle(false)}
+          >
+            Contact us
           </NavLink>
           <NavLink
             to="/library"
@@ -154,9 +154,13 @@ export default function Topbar() {
           >
             Journal Club
           </NavLink>
-          {/* <NavLink to="/people" className="nav-btn responsiveMenuLinks">
-            Our Team
-          </NavLink> */}
+          <NavLink
+            to="/contact-us"
+            className="nav-btn responsiveMenuLinks"
+            onClick={() => setToggle(false)}
+          >
+            Contact us
+          </NavLink>
         </div>
       </div>
     </div>
