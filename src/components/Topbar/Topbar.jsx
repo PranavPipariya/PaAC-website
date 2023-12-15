@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Topbar.css";
 import {
   Close,
   DensityMedium,
-  KeyboardArrowDown,
-  KeyboardArrowUp,
 } from "@mui/icons-material";
 import Logo from "../assets/iitr_logo.webp";
 export default function Topbar() {
@@ -76,7 +74,7 @@ export default function Topbar() {
               setEventMenu(!eventMenu);
             }}
           >
-            Events
+            Our Work
           </button>
 
           {/* {eventMenu ? <KeyboardArrowUp /> : <KeyboardArrowDown />} */}
@@ -94,7 +92,7 @@ export default function Topbar() {
               className="nav-btn expandedNavLinks"
               onClick={() => setToggle(false)}
             >
-              Recent Events
+              Events
             </NavLink>
             <NavLink
               to="/open-projects"
@@ -108,7 +106,7 @@ export default function Topbar() {
               className="nav-btn expandedNavLinks"
               onClick={() => setToggle(false)}
             >
-              JC Discussions
+              Journal Club
             </NavLink>
           </div>
           <NavLink
@@ -140,7 +138,7 @@ export default function Topbar() {
             className="nav-btn responsiveMenuLinks"
             onClick={() => setToggle(false)}
           >
-            Recent Events
+            Events
           </NavLink>
           <NavLink
             to="/open-projects"
@@ -154,7 +152,7 @@ export default function Topbar() {
             className="nav-btn responsiveMenuLinks"
             onClick={() => setToggle(false)}
           >
-            JC Discussions
+            Journal Club
           </NavLink>
           {/* <NavLink to="/people" className="nav-btn responsiveMenuLinks">
             Our Team
