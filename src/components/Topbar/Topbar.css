@@ -19,11 +19,6 @@
 .responsiveMenuLinks {
   display: none;
 }
-.nav-btn > .MuiSvgIcon-root {
-  position: relative;
-  top: 5px;
-}
-
 .expandedNavLinks {
   /* font-size: larger; */
   margin: .5rem auto !important;
@@ -31,12 +26,6 @@
 .nav-btns{
   position: relative;
 }
-/* a.expandedNavLinks.active {
-  color: #faf9f1;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 3px;
-} */
 .nav-btn:hover::before {
   content: "";
   position: absolute;
@@ -247,10 +236,6 @@
   }
   .hide {
     display: none;
-  }
-  .MuiSvgIcon-root {
-    margin: auto;
-    color: #eca674;
   }
   .moreMenu {
     display: none;

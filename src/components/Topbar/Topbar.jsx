@@ -1,11 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Topbar.css";
-import { Close, DensityMedium } from "@mui/icons-material";
 import Logo from "../assets/iitr_logo.webp";
 export default function Topbar() {
-  // const [moreMenu, setMoreMenu] = useState(false);
-  const [eventMenu, setEventMenu] = useState(false);
   const [toggle, setToggle] = useState(true);
   function handleToggle() {
     setToggle(!toggle);
@@ -22,7 +19,7 @@ export default function Topbar() {
         className={"toggle-btn " + (toggle ? "closed" : "")}
         onClick={handleToggle}
       >
-        {toggle ? <DensityMedium></DensityMedium> : <Close />}
+        {toggle ? open : close}
       </button>
       <div className="topbar-navs">
         <div className={"nav-btns " + (toggle ? "hide" : "")}>
@@ -36,45 +33,13 @@ export default function Topbar() {
           >
             About Us
           </NavLink>
-          {/* <button
-            className="nav-btn moreMenu"
-            onClick={() => {
-              setMoreMenu(!moreMenu);
-            }}
+          <NavLink
+            to="/activities"
+            className="nav-btn"
+            onClick={() => setToggle(false)}
           >
-            About us
-            {moreMenu ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
-            {moreMenu ? (
-              <div className="expandedMenu">
-                <NavLink to="/library" className="nav-btn expandedNavLinks">
-                  Library
-                </NavLink>
-                <NavLink
-                  to="/open-projects"
-                  className="nav-btn expandedNavLinks"
-                >
-                  Open Projects
-                </NavLink>
-                <NavLink to="/people" className="nav-btn expandedNavLinks">
-                  Our Team
-                </NavLink>
-              </div>
-            ) : (
-              <></>
-            )}
-          </button> */}
-          {/* <NavLink to="/events" className="nav-btn">
-            Events
-          </NavLink> */}
-          <button
-            className="nav-btn moreMenu"
-            onClick={() => {
-              setEventMenu(!eventMenu);
-            }}
-          >
-            Our Work
-          </button>
-
+            Activities
+          </NavLink>
           <NavLink
             to="/gallery"
             className="nav-btn"
@@ -83,13 +48,6 @@ export default function Topbar() {
             Gallery
           </NavLink>
 
-          {/* <NavLink
-            to="/inventory"
-            className="nav-btn"
-            onClick={() => setToggle(false)}
-          >
-            Inventory
-          </NavLink> */}
           <NavLink
             to="/contact-us"
             className="nav-btn"
@@ -97,7 +55,7 @@ export default function Topbar() {
           >
             Contact us
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/library"
             className="nav-btn responsiveMenuLinks"
             onClick={() => setToggle(false)}
@@ -131,7 +89,7 @@ export default function Topbar() {
             onClick={() => setToggle(false)}
           >
             Contact us
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </div>

@@ -96,9 +96,7 @@
   background-color: #eca674;
   border: none;
 }
-.alum-btn button .MuiSvgIcon-root {
-  font-size: 3rem;
-}
+
 .members-heads .card-container {
   width: max(10vw, 140px);
 }
