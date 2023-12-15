@@ -63,9 +63,9 @@ export default function Topbar() {
               <></>
             )}
           </button> */}
-          {/* <NavLink to="/events" className="nav-btn">
+          <NavLink to="/events" className="nav-btn">
             Events
-          </NavLink> */}
+          </NavLink>
           <button
             className="nav-btn moreMenu"
             onClick={() => {
