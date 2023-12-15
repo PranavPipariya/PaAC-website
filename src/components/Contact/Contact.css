@@ -1,6 +1,8 @@
 .contact-container {
   display: flex;
   flex-direction: column;
+  background-image: url("/Frame_96.png");
+  background-position: center;
 }
 .contact-topbar {
   height: 15vh;
