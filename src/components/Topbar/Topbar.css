@@ -46,7 +46,7 @@
   height: 3px;
   border-radius: 5px;
   background-color: #eca674;
-  transition: all 1s ease-out;
+  transition: all .5s ease-out;
   transform-origin: bottom right;
 }
 .nav-btn.active::before{
