@@ -12,11 +12,11 @@ export default function Achievement() {
     },[len]);
     return(
         <div className="achi-container">
-            <button className="achi-btn" onClick={() => setState((state-1+len)%len)}>left</button>
+            <button className="achi-btn" onClick={() => setState((state-1+len)%len)}><i className="fa-solid fa-chevron-left"></i></button>
             <p className="achi-desc">
                 {Data[state].desc}
             </p>
-            <button className="achi-btn" onClick={() => setState((state+1)%len)}>right</button>
+            <button className="achi-btn" onClick={() => setState((state+1)%len)}><i className="fa-solid fa-chevron-right"></i></button>
         </div>
     )
 }
