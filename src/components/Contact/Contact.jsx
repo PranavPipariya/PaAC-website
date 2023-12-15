@@ -64,23 +64,22 @@ export default function Contact() {
       </div>
       <div
         className="contact-us-container"
-       
+
       >
         <div className="contact-desc">
           <div className="contact-us">
-            {/* <h1 className="contact-desc-title">Contact Us</h1> */}
             <h2 className="contact-desc-desc">
               Interested in joining us but don't know where to start? Do you
               have a mind-blowing idea that you need help with? Reach out to us,
               We are happy to help!
             </h2>
           </div>
-          <div className="chat-with-us">
+          {/* <div className="chat-with-us">
             <h1 className="chat-title">Join our open Whatsapp group</h1>
             <div className="chat-qr">
               <img src="/images/iitr_logo.png" alt="iitr logo"></img>
             </div>
-          </div>
+          </div> */}
           <div className="visit-us">
             <h1 className="visit-title">Visit us</h1>
             <div className="location">
@@ -140,7 +139,7 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <form ref={form} onSubmit={handleSubmit} className="contact-form">
+        <form ref={form} onSubmit={handleSubmit} className="contact-form" netlify>
           <label>Name </label>
           <input
             required
@@ -151,10 +150,10 @@ export default function Contact() {
               dispatch({ type: "Name", payload: event.target.value });
             }}
           />
-          <label>Email </label>
+          <label>Email</label>
           <input
             required
-            name="form-email"
+            name="email"
             type="email"
             value={formState.email}
             onChange={(event) => {

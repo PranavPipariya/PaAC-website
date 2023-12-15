@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./Events.css";
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";

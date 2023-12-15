@@ -1,12 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Topbar.css";
-import {
-  Close,
-  DensityMedium,
-  KeyboardArrowDown,
-  KeyboardArrowUp,
-} from "@mui/icons-material";
+import { Close, DensityMedium } from "@mui/icons-material";
 import Logo from "../assets/iitr_logo.webp";
 export default function Topbar() {
   // const [moreMenu, setMoreMenu] = useState(false);
@@ -76,10 +71,8 @@ export default function Topbar() {
               setEventMenu(!eventMenu);
             }}
           >
-            Events
+            Our Work
           </button>
-
-          {/* {eventMenu ? <KeyboardArrowUp /> : <KeyboardArrowDown />} */}
 
           <div className="expandedMenu">
             <NavLink
@@ -94,7 +87,7 @@ export default function Topbar() {
               className="nav-btn expandedNavLinks"
               onClick={() => setToggle(false)}
             >
-              Recent Events
+              Events
             </NavLink>
             <NavLink
               to="/open-projects"
@@ -108,7 +101,7 @@ export default function Topbar() {
               className="nav-btn expandedNavLinks"
               onClick={() => setToggle(false)}
             >
-              JC Discussions
+              Journal Club
             </NavLink>
           </div>
           <NavLink
@@ -118,15 +111,20 @@ export default function Topbar() {
           >
             Gallery
           </NavLink>
-          {/* <NavLink to="/contact-us" className="nav-btn">
-            Contact us
-          </NavLink> */}
+
           <NavLink
             to="/inventory"
             className="nav-btn"
             onClick={() => setToggle(false)}
           >
             Inventory
+          </NavLink>
+          <NavLink
+            to="/contact-us"
+            className="nav-btn"
+            onClick={() => setToggle(false)}
+          >
+            Contact us
           </NavLink>
           <NavLink
             to="/library"
@@ -140,7 +138,7 @@ export default function Topbar() {
             className="nav-btn responsiveMenuLinks"
             onClick={() => setToggle(false)}
           >
-            Recent Events
+            Events
           </NavLink>
           <NavLink
             to="/open-projects"
@@ -154,11 +152,15 @@ export default function Topbar() {
             className="nav-btn responsiveMenuLinks"
             onClick={() => setToggle(false)}
           >
-            JC Discussions
+            Journal Club
           </NavLink>
-          {/* <NavLink to="/people" className="nav-btn responsiveMenuLinks">
-            Our Team
-          </NavLink> */}
+          <NavLink
+            to="/contact-us"
+            className="nav-btn responsiveMenuLinks"
+            onClick={() => setToggle(false)}
+          >
+            Contact us
+          </NavLink>
         </div>
       </div>
     </div>
