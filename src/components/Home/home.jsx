@@ -6,15 +6,15 @@ import Planet from "../assets/Planet.png";
 import { NavLink } from "react-router-dom";
 import Achievement from "../Achievement/Achievement";
 import HomeEvents from "./HomeEvents";
-import Logo from "./Logo";
+// import Logo from "./Logo";
 
 export default function Home() {
 
   return (
     <div>
-      <div className="logo-div">
-        <Logo></Logo>
-      </div>
+    {/* //   <div className="logo-div">
+    //     <Logo></Logo>
+    //   </div> */}
       <div className="home-container">
         <div className="home-topbar">
           <Topbar />
@@ -46,7 +46,7 @@ export default function Home() {
               <NavLink to="/about-us">
                 <h1 className="know-header">What do we do at PaAC?</h1>
               </NavLink>
-              <p className="know-body">
+              {/* <p className="know-body">
               Formerly known as the Star-gazing section, our group directly
               operates under the Student Technical Council of IITR and Office of
               Dean-sponsored research and industrial consultancy. The group is a
@@ -59,12 +59,11 @@ export default function Home() {
               club frequently engages in research paper discussions and also in
               open informal group discussions on various mathematical and
               physical science topics.
-            </p>
+            </p> */}
             </div>
             <div
               className="paac-gp"
             >
-              <img src="src/components/assets/gallery/paac.jpg" alt=""></img>
             </div>
           </div>
           <div

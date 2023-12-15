@@ -1,5 +1,5 @@
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import "./Achievement.css";
 import Data from "./Data.js";
 

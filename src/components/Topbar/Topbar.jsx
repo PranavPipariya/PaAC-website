@@ -10,6 +10,7 @@ export default function Topbar() {
   function handleToggle() {
     setToggle(!toggle);
   }
+
   return (
     <div className="topbar-container">
       <div className="topbar-top">
@@ -74,36 +75,6 @@ export default function Topbar() {
             Our Work
           </button>
 
-          <div className="expandedMenu">
-            <NavLink
-              to="/library"
-              className="nav-btn expandedNavLinks"
-              onClick={() => setToggle(false)}
-            >
-              Library
-            </NavLink>
-            <NavLink
-              to="/Events"
-              className="nav-btn expandedNavLinks"
-              onClick={() => setToggle(false)}
-            >
-              Events
-            </NavLink>
-            <NavLink
-              to="/open-projects"
-              className="nav-btn expandedNavLinks"
-              onClick={() => setToggle(false)}
-            >
-              Open Projects
-            </NavLink>
-            <NavLink
-              to="/jc"
-              className="nav-btn expandedNavLinks"
-              onClick={() => setToggle(false)}
-            >
-              Journal Club
-            </NavLink>
-          </div>
           <NavLink
             to="/gallery"
             className="nav-btn"
@@ -112,13 +83,13 @@ export default function Topbar() {
             Gallery
           </NavLink>
 
-          <NavLink
+          {/* <NavLink
             to="/inventory"
             className="nav-btn"
             onClick={() => setToggle(false)}
           >
             Inventory
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/contact-us"
             className="nav-btn"
@@ -165,4 +136,34 @@ export default function Topbar() {
       </div>
     </div>
   );
-}
+ }
+// <div className="expandedMenu">
+//             <NavLink
+//               to="/library"
+//               className="nav-btn expandedNavLinks"
+//               onClick={() => setToggle(false)}
+//             >
+//               Library
+//             </NavLink>
+//             <NavLink
+//               to="/Events"
+//               className="nav-btn expandedNavLinks"
+//               onClick={() => setToggle(false)}
+//             >
+//               Events
+//             </NavLink>
+//             <NavLink
+//               to="/open-projects"
+//               className="nav-btn expandedNavLinks"
+//               onClick={() => setToggle(false)}
+//             >
+//               Open Projects
+//             </NavLink>
+//             <NavLink
+//               to="/jc"
+//               className="nav-btn expandedNavLinks"
+//               onClick={() => setToggle(false)}
+//             >
+//               Journal Club
+//             </NavLink>
+//           </div>
