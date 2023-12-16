@@ -5,25 +5,16 @@
   "type": "module",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/icons-material": "^5.11.0",
-    "@mui/material": "^5.11.6",
-    "@mui/styled-engine-sc": "^5.11.0",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.2",
     "blurhash": "^2.0.5",
     "gsap": "^3.12.2",
-    "swiper":"^11.0.5",
     "react-blurhash": "^0.3.0",
     "react-carousel-minimal": "^1.4.1",
     "react-router-dom": "^6.7.0",
-    "styled-components": "^5.3.6",
-    "web-vitals": "^2.1.4"
+    "swiper": "^11.0.5"
   },
   "scripts": {
     "start": "vite",

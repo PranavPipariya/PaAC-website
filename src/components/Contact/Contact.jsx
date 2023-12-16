@@ -3,14 +3,6 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import Topbar from "../Topbar/Topbar";
 
-import {
-  Instagram,
-  LinkedIn,
-  Twitter,
-  Facebook,
-  Email
-} from "@mui/icons-material";
-
 export default function Contact() {
   const form = useRef();
   const resetForm = () => {
@@ -97,13 +89,13 @@ export default function Contact() {
             </div>
           </div>
           <div className="social-media">
-            <a
+            {/* <a
               href="https://www.instagram.com/astro_iitr/?hl=en"
               target="_blank"
               className="social-media-handle"
               rel="noreferrer"
             >
-              <Instagram />
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
               href="https://www.linkedin.com/company/paac-iitr/?originalSubdomain=in"
@@ -111,7 +103,7 @@ export default function Contact() {
               className="social-media-handle"
               rel="noreferrer"
             >
-              <LinkedIn />
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
               href="https://twitter.com/paaciitr"
@@ -119,24 +111,24 @@ export default function Contact() {
               className="social-media-handle"
               rel="noreferrer"
             >
-              <Twitter />
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a
+            {/* <a
               href="https://www.facebook.com/physastroclubiitr/"
               target="_blank"
               className="social-media-handle"
               rel="noreferrer"
             >
-              <Facebook />
-            </a>
-            <a
+              <FontAwesomeIcon icon={faFacebook} />
+            </a> */}
+            {/* <a
               href="mailto:paac@iitr.ac.in"
               target="_blank"
               className="social-media-handle"
               rel="noreferrer"
             >
-              <Email />
-            </a>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a> */} 
           </div>
         </div>
         <form ref={form} onSubmit={handleSubmit} className="contact-form" netlify>

@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./People.css";
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 import { Secy, Head, Member} from "./Data.js";
 import Card from "./Card";
-// import axios from "axios";   for strapi testing
-// import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 
 export default function People() {
-  // const [displayAlums, setDisplayAlums] = useState(false);
 
   const [year, setYear] = useState(2);
   return (
@@ -112,41 +109,6 @@ export default function People() {
           <div className="horizontal-line"></div>
         </div>
       </div>
-      {/* <div
-        className="alum-container"
-      >
-        <button
-          className="alum-btn"
-          onClick={() => {
-            setDisplayAlums(!displayAlums);
-          }}
-        >
-          <span>Meet our Alums</span>
-          <button
-          >
-            {displayAlums === false ? (
-              <KeyboardArrowDown />
-            ) : (
-              <KeyboardArrowUp />
-            )}
-          </button>
-        </button>
-        <div
-          className={`alums ${displayAlums === false ? "hide" : ""}`}
-         
-        >
-          {alums.map((value) => (
-            <Card
-              id={value.name}
-              name={value.name}
-              img={value.image}
-              position={value.position}
-              linkedIn={value.linkedIn}
-              email={value.email}
-            />
-          ))}
-        </div>
-      </div> */}
       <div className="about-footer">
         <Footer />
       </div>
