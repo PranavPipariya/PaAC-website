@@ -75,11 +75,83 @@
   right: 0;
   height: 40vw;
 }
+
+/* ----------Newsletter styling--------------- */
+.newsletter-container {
+  z-index: 1;
+  margin-top: min(120vh, 88vw);
+}
+.newsletter {
+  overflow: hidden;
+  width: 90vw;
+  /* height: 15rem; */
+  padding: 1rem 5rem 1rem 2.5rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+.newsletter-right{
+  width: 15%;
+  position: relative;
+  /* justify-content: right; */
+  /* display: flex;
+  flex-direction: column; */
+  margin: 0 2rem;
+}
+.newsletter-left h6 {
+  font-size: 1.5rem;
+  margin: .5rem 0;
+  color: #050528;
+}
+.newsletter-left h1 {
+  color: #050528;
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin: .5rem 0;
+}
+.newsletter-img > img {
+  position: relative;
+  right: 2rem;
+  bottom: 1rem;
+  object-fit: contain;
+  z-index: 2;
+}
+.newsletter-img-border{
+  height: 14rem;
+  width: 10rem;
+  position: relative;
+  bottom: -.5rem;
+  right: rem;
+  z-index: 1;
+  border: 2px solid #050528;
+}
+.newsletter-ellipse{
+  height: 7rem;
+  background-color: #eca674;
+  position: absolute;
+  right: -9rem;
+  width: max(40vw, 20rem);
+  bottom: -4rem;
+  shape-outside: ellipse(50% 3.5rem);
+  border-radius: 60% / 50%;
+  rotate: -17deg;
+}
+.read-here{
+  color: white;
+  background-color:#eca674;
+  border: none;
+  border-radius:.51rem;
+  padding: .8rem;
+  box-shadow: #050528 ;
+}
+/* ----------Newsletter styling fineshes here-------------- */
 .know-paac-container {
   width: 90%;
   position: relative;
   margin-left: 0;
-  margin-top: min(120vh, 60vw);
+  /* margin-top: min(120vh, 60vw); */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -350,4 +422,24 @@
     width: 35vw;
     height: 35vw;
   }
+
+  /* ----------- Newsletter styling---------- */
+
+  .newsletter {
+    /* flex-direction: column; */
+    padding-right: 6rem;
+    padding-left: 1rem;
+  }
+  .newsletter-left > h6{
+    font-size: 1.1rem;
+  }
+  .newsletter-left > h1 {
+    font-size: 1.7rem;
+  }
+  .newsletter-left{
+    width: 100%;
+  }
+  /* --------------Newsletter styling finishes here */
+
 }
+
