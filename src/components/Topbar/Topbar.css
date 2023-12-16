@@ -86,8 +86,30 @@
   letter-spacing: normal;
 }
 
-.NavigationMenuLink:hover {
-  text-decoration: underline;
+.NavigationMenuLink {
+  position: relative;
+}
+.NavigationMenuLink::before{
+  content: '';
+  position: absolute;
+  bottom: .2rem;
+  left: 40%;
+  width: 0;
+  height: 2px;
+  background-color: #eca674;
+  transition: width 0.2s ease;
+  transform-origin: bottom center;
+}
+.NavigationMenuLink:hover::before {
+  width: 25%;
+  transform-origin: bottom center;
+}
+.NavigationMenuLink:active::before {
+  /* left: 50%; */
+  width: 30%;
+  transition: width 1s ease;
+  transform-origin: bottom left;
+
 }
 
 .NavigationMenuTrigger {
