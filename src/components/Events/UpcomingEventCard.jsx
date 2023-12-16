@@ -28,14 +28,14 @@ coverflowEffect={{
   stretch: 0,
   depth: 100,
   modifier: 2.5,
-  // breakpoints: {
-  //   1024: {
-  //     perPage: 2
-  //   },
-  //   768: {
-  //     perPage: 1
-  //   }
-  // },
+  breakpoints: {
+    1024: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 1
+    }
+  },
 }}
 pagination={{ clickable: true }}
 navigation={{
