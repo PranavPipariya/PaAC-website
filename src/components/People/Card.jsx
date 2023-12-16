@@ -1,9 +1,7 @@
-import { Email, LinkedIn } from "@mui/icons-material";
 import Logo from "../assets/iitr_logo.webp";
 import {useState, useEffect} from "react";
 import "./People.css";
 import { Blurhash } from "react-blurhash";
-
 export default function Card(props) {
     const [imageLoaded, setImageLoaded] = useState(false)
 
@@ -25,10 +23,10 @@ export default function Card(props) {
             <h2 className="card-position">({props.position})</h2>
             <div className="card-contacts">
                 <a href={props.linkedIn}>
-                    <LinkedIn fontSize="2vw" className="card-socials"/>
+                    linkedin
                 </a>
                 <a href={props.email}>
-                    <Email fontSize="2vw" className="card-socials"/>
+                email
                 </a>
             </div>
         </div>

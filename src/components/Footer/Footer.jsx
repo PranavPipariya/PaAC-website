@@ -1,5 +1,4 @@
 import "./Footer.css";
-import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 
 export default function Footer(){
     return(
@@ -23,10 +22,10 @@ export default function Footer(){
                     <h2 className="footer-body"><a href="mailto:paac@iitr.ac.in">paac@iitr.ac.in</a></h2>
                 </div>
                 <div className="footer-div social">
-                    <div className="footer-socials"><a href="https://www.instagram.com/astro_iitr/?hl=en" target="m_blank"><Instagram className="socials-icon" fontSize="2vw"/>Instagram</a></div>
-                    <div className="footer-socials"><a href="https://www.facebook.com/physastroclubiitr/" target="m_blank"><Facebook className="socials-icon" fontSize="2vw"/>Facebook</a></div>
-                    <div className="footer-socials"><a href="https://twitter.com/paaciitr?lang=en" target="m_blank"><Twitter className="socials-icon" fontSize="2vw"/>Twitter</a></div>
-                    <div className="footer-socials"><a href="https://www.linkedin.com/company/paac-iitr/" target="m_blank"><LinkedIn className="socials-icon" fontSize="2vw"/>Linkedin</a></div>
+                    {/* <div className="footer-socials"><a href="https://www.instagram.com/astro_iitr/?hl=en" target="m_blank"><i class="fa-solid fa-user"></i>Instagram</a></div> */}
+                    {/* <div className="footer-socials"><a href="https://www.facebook.com/physastroclubiitr/" target="m_blank"><FontAwesomeIcon icon={faFacebook} className="socials-icon" fontSize="2vw"></FontAwesomeIcon>Facebook</a></div> */}
+                    {/* <div className="footer-socials"><a href="https://twitter.com/paaciitr?lang=en" target="m_blank"><FontAwesomeIcon icon={faTwitter} className="socials-icon" fontSize="2vw"></FontAwesomeIcon>Twitter</a></div> */}
+                    {/* <div className="footer-socials"><a href="https://www.linkedin.com/company/paac-iitr/" target="m_blank"><FontAwesomeIcon icon={faLinkedin} className="socials-icon" fontSize="2vw"></FontAwesomeIcon>Linkedin</a></div> */}
                 </div>
                 </div>
             </div>
