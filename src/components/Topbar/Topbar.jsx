@@ -42,7 +42,8 @@ export default function Topbar() {
             Activities
           </NavLink>
           <NavLink
-            to="/gallery"
+          to="/open-projects"
+            // to="/gallery"
             className="nav-btn"
             onClick={() => setToggle(false)}
           >

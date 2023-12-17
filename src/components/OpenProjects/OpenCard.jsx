@@ -6,7 +6,7 @@ const OpenProjects = () => {
     <>
     {Open.map((op) => (
         < div className='all-cards'>
-    <div className="integration-bee">
+    <div className="project-name">
       <div className="card">{/* Placeholder for the image or content */}</div>
       <div className="content">
         <div className='t1'>

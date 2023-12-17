@@ -8,15 +8,15 @@ export default function Events(){
         window.scrollTo(0,0);
     }, []); 
     return(
-        <div className="events-container">
-            <div className="events-topbar">
+        <div className="open-container">
+            <div className="open-topbar">
                 <Topbar />
             </div>
             <div className="titles">
-            <h1 className="events-heading-title"> Events</h1>
-            <h1 className="events-heading-title-2"> Open Projects</h1>
+            <h1 className="open-heading-title"> Events</h1>
+            <h1 className="open-heading-title-2"> Open Projects</h1>
             </div>
-            <div  className="upcoming-card">
+            <div  className="open-card">
             <OpenCard/>
                 
             </div>
