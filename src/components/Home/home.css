@@ -100,15 +100,21 @@
   flex-direction: column; */
   margin: 0 2rem;
 }
-.newsletter-left h6 {
-  font-size: 1.5rem;
+.newsletter-left > p:first-child{
+  margin-bottom: 0px;
+}
+.newsletter-left > p:nth-child(2) {
+  margin-top: 0;
+}
+.newsletter-left > p {
+  font-size: 2rem;
   margin: .5rem 0;
   color: #050528;
 }
 .newsletter-left h1 {
   color: #050528;
   font-size: 2.5rem;
-  font-weight: 100;
+  font-weight: 600;
   margin: .5rem 0;
 }
 .newsletter-img > img {
@@ -143,6 +149,7 @@
   background-color:#eca674;
   border: none;
   border-radius:.51rem;
+  font-weight: bold;
   padding: .8rem;
   box-shadow: #050528 ;
 }
@@ -426,18 +433,38 @@
   /* ----------- Newsletter styling---------- */
 
   .newsletter {
-    /* flex-direction: column; */
-    padding-right: 6rem;
-    padding-left: 1rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 0rem;
+    /* height: 18rem; */
   }
-  .newsletter-left > h6{
-    font-size: 1.1rem;
+  .newsletter-left > p{
+    font-size: 3.5vw;
   }
   .newsletter-left > h1 {
-    font-size: 1.7rem;
+    font-size: 5vw;
   }
   .newsletter-left{
-    width: 100%;
+    max-width: 50%;
+  }
+  .newsletter-img > img {
+    height: 10rem;
+    width: 7rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+  .newsletter-img-border {
+    height: 8rem;
+    width: 5.5rem;
+    bottom: -.5rem;
+  }
+  .newsletter-ellipse{
+    border-radius: 50% / 50%;
+    bottom: -5rem;
+    right: -5rem;
+  }
+  .read-here {
+    color: #050528;
   }
   /* --------------Newsletter styling finishes here */
 
