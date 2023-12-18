@@ -5,7 +5,8 @@ const Newsletter = () => {
   return (
     <div className='newsletter'>
       <div className="newsletter-left">
-        <h6>Third Edition of our Biannual Newsletter is out!</h6>
+        <p>Third Edition of our </p>
+        <p>Biannual Newsletter is out!</p>
         <h1>THE ASTRO INSIDER</h1>
         <button className='read-here'>Read here &gt;&gt;</button>
       </div>
