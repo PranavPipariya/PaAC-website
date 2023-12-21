@@ -2,9 +2,12 @@ import { NavLink } from "react-router-dom";
 import "./Topbar.css";
 import Logo from "../assets/iitr_logo.webp";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
+import { useState } from "react";
 
 export default function Topbar() {
-
+  const [toggle, setToggle] = useState(false)
   return (
     <div className="topbar-container">
       <div className="topbar-top">
@@ -101,6 +104,70 @@ export default function Topbar() {
             <NavigationMenu.Viewport className="NavigationMenuViewport" />
           </div>
         </NavigationMenu.Root>
+      </div>
+      <div className="mobile-menu">
+        <DropdownMenu.Root>
+          <DropdownMenu.Trigger className="DropdownMenuTrigger" asChild>
+            <button
+              className="IconButton"
+              aria-label="Customise options"
+              onClick={() => {
+                setToggle(!toggle);
+                console.log(toggle);
+              }}
+            >
+              {toggle ? <Cross1Icon /> : <HamburgerMenuIcon />}
+            </button>
+          </DropdownMenu.Trigger>
+
+          <DropdownMenu.Portal className="mobile-menu-dropdown">
+            <DropdownMenu.Content
+              className="DropdownMenuContent"
+              sideOffset={5}
+            >
+              <DropdownMenu.Item className="DropdownMenuItem">
+                <NavLink className="DropdownMenuLink" to="/">
+                  Home
+                </NavLink>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item className="DropdownMenuItem">
+                <NavLink className="DropdownMenuLink" to="/people">
+                  About
+                </NavLink>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item className="DropdownMenuItem" disabled>
+                <NavLink className="DropdownMenuLink" to="/library">
+                  Library
+                </NavLink>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item className="DropdownMenuItem" disabled>
+                <NavLink className="DropdownMenuLink" to="/events">
+                  Events
+                </NavLink>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item className="DropdownMenuItem" disabled>
+                <NavLink className="DropdownMenuLink" to="/open-projects">
+                  Open Projects
+                </NavLink>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item className="DropdownMenuItem" disabled>
+                <NavLink className="DropdownMenuLink" to="/jc">
+                  Journal Club
+                </NavLink>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item className="DropdownMenuItem" disabled>
+                <NavLink className="DropdownMenuLink" to="/gallery">
+                  Gallery
+                </NavLink>
+              </DropdownMenu.Item>
+              <DropdownMenu.Item className="DropdownMenuItem" disabled>
+                <NavLink className="DropdownMenuLink" to="/contact-us">
+                  Contact
+                </NavLink>
+              </DropdownMenu.Item>
+            </DropdownMenu.Content>
+          </DropdownMenu.Portal>
+        </DropdownMenu.Root>
       </div>
     </div>
   );
