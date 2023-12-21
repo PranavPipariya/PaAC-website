@@ -2,6 +2,8 @@ import Logo from "../assets/iitr_logo.webp";
 import { useState, useEffect } from "react";
 import "./People.css";
 import { Blurhash } from "react-blurhash";
+import { LinkedInLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons";
+
 export default function Card(props) {
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -30,10 +32,10 @@ export default function Card(props) {
       <h2 className="card-position">({props.position})</h2>
       <div className="card-contacts">
         <a href={props.linkedIn}>
-          <i className="fa-brands fa-linkedin"></i>
+          <LinkedInLogoIcon/>
         </a>
         <a href={props.email}>
-          <i className="fa-regular fa-envelope"></i>
+          <EnvelopeClosedIcon />
         </a>
       </div>
     </div>
