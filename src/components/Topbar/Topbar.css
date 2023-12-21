@@ -3,6 +3,7 @@
   font-family: "Josefin Sans", sans-serif !important;
   font-display: swap;
 }
+
 .topbar-container {
   display: flex;
   justify-content: space-between;
@@ -12,6 +13,7 @@
   width: 98%;
   z-index: 100;
 }
+
 .small-screen-logo {
   width: 5vw;
   height: 5vw;
@@ -26,6 +28,7 @@
     display: block !important;
   }
 }
+
 .topbar-navs {
   padding: 1vw;
   font-size: 1rem;
@@ -53,6 +56,12 @@
     height: 6vw;
     margin: 0;
   }
+  .topbar-navs{
+    display: none;
+  }
+  .mobile-menu{
+    display: block;
+  }
 }
 
 .NavigationMenuRoot {
@@ -71,9 +80,11 @@
   color: #eca674;
   margin: 0;
 }
+
 .NavigationMenuTrigger {
   all: unset;
 }
+
 .NavigationMenuTrigger,
 .NavigationMenuLink {
   padding: 8px 12px;
@@ -87,41 +98,72 @@
 }
 
 .NavigationMenuLink {
+  display: block;
+  font-size: 1rem;
   position: relative;
+  margin: 0 .3rem;
 }
-.NavigationMenuLink::before{
+
+.NavigationMenuLink::after{
   content: '';
   position: absolute;
-  bottom: .2rem;
-  left: 40%;
   width: 0;
-  height: 2px;
+  height: 3px;
+  border-radius: 5px;
+  bottom: .3rem;
+  left: 50%;
   background-color: #eca674;
-  transition: width 0.2s ease;
-  transform-origin: bottom center;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
-.NavigationMenuLink:hover::before {
-  width: 25%;
-  transform-origin: bottom center;
-}
-.NavigationMenuLink:active::before {
-  /* left: 50%; */
-  width: 30%;
-  transition: width 1s ease;
-  transform-origin: bottom left;
-
+.NavigationMenuLink:hover::after {
+  width: 27%;
+  left: 38%;
 }
 
+.NavigationMenuLink.active::after{
+  content: "";
+  position: absolute;
+  left: min(20%, 1rem);
+  bottom: -5px;
+  border-radius: 5px;
+  width: 55%;
+  height: 3px;
+  background-color: #eca674;
+  transition: width .5s ease;
+  transform-origin: bottom right
+} 
+
+/* .NavigationMenuLink:hover::before {
+  content: "";
+  position: absolute;
+  left: 30%;
+  bottom: -3px;
+  width: 40%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #eca674;
+  transition: all .5s ease-out;
+  transform-origin: bottom right;
+}
+.NavigationMenuLink.active::before{
+  content: "";
+  position: absolute;
+  left: min(20%, 1rem);
+  bottom: -5px;
+  border-radius: 5px;
+  width: 55%;
+  height: 3px;
+  background-color: #eca674;
+  transition: width .5s ease;
+  transform-origin: bottom right;
+} */
 .NavigationMenuTrigger {
   display: flex;
   align-items: center;
+  font-size: 1rem;
+  margin:  0 .3rem;
   justify-content: space-between;
   gap: 2px;
-}
-
-.NavigationMenuLink {
-  display: block;
-  font-size: .75rem;
 }
 
 .NavigationMenuContent {
@@ -328,3 +370,44 @@
     opacity: 0;
   }
 }
+
+/* --------------Mobile Menu Styling------------ */
+.DropdownMenuTrigger{
+  background-color: #050528;
+  border: none;
+}
+.IconButton{
+  background-color: #050528;
+  border: none;
+}
+.IconButton > svg{
+  color: #eca674;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.DropdownMenuContent {
+  background-color: #eca674;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .7rem 1rem;
+  border-radius: 1rem;
+  
+}
+
+.DropdownMenuItem{
+  font-size: 1.2rem;
+  margin: .3rem 0;
+  font-weight: 600;
+}
+
+.DropdownMenuLink{
+  color: #050528;
+}
+@media screen and (min-width: 701px) {
+.mobile-menu, .DropdownMenuItem, .DropdownMenuContent{
+  display: none;
+}
+}
+/* ---------Mobile Menu Styling finishes here */
